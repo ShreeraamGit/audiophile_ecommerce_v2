@@ -1,12 +1,5 @@
-import { Fragment } from "react";
-import { Outlet, useParams } from "react-router-dom";
-
 function Home() {
-  return (
-    <Fragment>
-      <h1 className="border m-auto">Home page</h1>
-    </Fragment>
-  );
+  return <h1 className="mr-32 ml-32 text-5xl">Home</h1>;
 }
 
 export default Home;
