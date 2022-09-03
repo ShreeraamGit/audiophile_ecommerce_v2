@@ -1,5 +1,11 @@
+import CategoryDisplay from "../../components/categoryDisplay/categoryDisplay";
+
 function Home() {
-  return <h1 className="mr-32 ml-32 text-5xl">Home</h1>;
+  return (
+    <div className="h-screen mr-32 ml-32">
+      <CategoryDisplay></CategoryDisplay>
+    </div>
+  );
 }
 
 export default Home;
