@@ -1,4 +1,5 @@
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import HeroBanner from "../../components/HeroBanner/heroBanner";
 import Navbarwithlogo from "../../components/NavBarLogo/navbarLogo";
 import { Outlet } from "react-router-dom";
@@ -6,7 +7,12 @@ import { HerosectionContext } from "../../context/heroSectionContext";
 import { useContext } from "react";
 
 function Navigation() {
-  const { pageStatus } = useContext(HerosectionContext);
+  const { pageStatus, setPageStatus } = useContext(HerosectionContext);
+  const location = useLocation();
+
+  useEffect(() => {
+    setPageStatus(location.pathname.slice(1));
+  }, [location]);
 
   const renderSwitch = (param) => {
     switch (param) {
