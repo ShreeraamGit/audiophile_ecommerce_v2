@@ -5,6 +5,7 @@ import Navbarwithlogo from "../../components/NavBarLogo/navbarLogo";
 import { Outlet } from "react-router-dom";
 import { HerosectionContext } from "../../context/heroSectionContext";
 import { useContext } from "react";
+import Footer from "../../components/Footer/footer";
 
 function Navigation() {
   const { pageStatus, setPageStatus } = useContext(HerosectionContext);
@@ -46,7 +47,7 @@ function Navigation() {
         {renderSwitch(pageStatus)}
       </div>
       <Outlet></Outlet>
-      <div>Footer</div>
+      <Footer></Footer>
     </Fragment>
   );
 }
