@@ -15,19 +15,17 @@ function HeroBanner() {
           Expreience natural, lifelike audio and exceptional build quality made
           fir the passionate enthusiast
         </p>
-        <Link to="product">
-          <Button
-            style={{
-              backgroundColor: "#D87D4A",
-              borderRadius: "0px",
-              width: "40%",
-            }}
-            variant="contained"
-            size="large"
-          >
-            SEE PRODUCT
-          </Button>
-        </Link>
+        <Button
+          style={{
+            backgroundColor: "#D87D4A",
+            borderRadius: "0px",
+            width: "40%",
+          }}
+          variant="contained"
+          size="large"
+        >
+          SEE PRODUCT
+        </Button>
       </div>
     </div>
   );

@@ -3,6 +3,7 @@ import { ReactComponent as Cart } from "../../assets/cart.svg";
 import { ReactComponent as Logo } from "../../assets/shared/desktop/logo.svg";
 import { useContext } from "react";
 import { HerosectionContext } from "../../context/heroSectionContext";
+import { ProductContext } from "../../context/productContext";
 
 function Navbarwithlogo() {
   return (

@@ -392,9 +392,9 @@ export const SHOP_DATA = [
     slug: "zx7-speaker",
     name: "ZX7 Speaker",
     image: {
-      mobile: "./assets/product-zx7-speaker/mobile/image-product.jpg",
-      tablet: "./assets/product-zx7-speaker/tablet/image-product.jpg",
-      desktop: "./assets/product-zx7-speaker/desktop/image-product.jpg",
+      mobile: "https://i.ibb.co/26Fxwz5/image-category-page-preview.jpg",
+      tablet: "https://i.ibb.co/S6dWFjR/image-category-page-preview.jpg",
+      desktop: "https://i.ibb.co/NFr73g7/image-product.jpg",
     },
     category: "speakers",
     categoryImage: {
@@ -435,19 +435,19 @@ export const SHOP_DATA = [
     ],
     gallery: {
       first: {
-        mobile: "./assets/product-zx7-speaker/mobile/image-gallery-1.jpg",
-        tablet: "./assets/product-zx7-speaker/tablet/image-gallery-1.jpg",
-        desktop: "./assets/product-zx7-speaker/desktop/image-gallery-1.jpg",
+        mobile: "https://i.ibb.co/WFGr3kJ/image-gallery-1.jpg",
+        tablet: "https://i.ibb.co/B3XqfyP/image-gallery-1.jpg",
+        desktop: "https://i.ibb.co/6FxX0kh/image-gallery-3.jpg",
       },
       second: {
-        mobile: "./assets/product-zx7-speaker/mobile/image-gallery-2.jpg",
-        tablet: "./assets/product-zx7-speaker/tablet/image-gallery-2.jpg",
-        desktop: "./assets/product-zx7-speaker/desktop/image-gallery-2.jpg",
+        mobile: "https://i.ibb.co/Yy7sL2f/image-gallery-2.jpg",
+        tablet: "https://i.ibb.co/V2PDbkb/image-gallery-2.jpg",
+        desktop: "https://i.ibb.co/Btd1xr5/image-gallery-2.jpg",
       },
       third: {
-        mobile: "./assets/product-zx7-speaker/mobile/image-gallery-3.jpg",
-        tablet: "./assets/product-zx7-speaker/tablet/image-gallery-3.jpg",
-        desktop: "./assets/product-zx7-speaker/desktop/image-gallery-3.jpg",
+        mobile: "https://i.ibb.co/QcFwSmL/image-gallery-3.jpg",
+        tablet: "https://i.ibb.co/2SJBP5H/image-gallery-3.jpg",
+        desktop: "https://i.ibb.co/tm6XB2q/image-gallery-1.jpg",
       },
     },
     others: [
@@ -487,7 +487,7 @@ export const SHOP_DATA = [
     image: {
       mobile: "./assets/product-zx9-speaker/mobile/image-product.jpg",
       tablet: "./assets/product-zx9-speaker/tablet/image-product.jpg",
-      desktop: "./assets/product-zx9-speaker/desktop/image-product.jpg",
+      desktop: "https://i.ibb.co/cynms90/image-product.jpg",
     },
     category: "speakers",
     categoryImage: {
@@ -530,17 +530,17 @@ export const SHOP_DATA = [
       first: {
         mobile: "./assets/product-zx9-speaker/mobile/image-gallery-1.jpg",
         tablet: "./assets/product-zx9-speaker/tablet/image-gallery-1.jpg",
-        desktop: "./assets/product-zx9-speaker/desktop/image-gallery-1.jpg",
+        desktop: "https://i.ibb.co/q0Zs2kB/image-gallery-3.jpg",
       },
       second: {
         mobile: "./assets/product-zx9-speaker/mobile/image-gallery-2.jpg",
         tablet: "./assets/product-zx9-speaker/tablet/image-gallery-2.jpg",
-        desktop: "./assets/product-zx9-speaker/desktop/image-gallery-2.jpg",
+        desktop: "https://i.ibb.co/DV8pQ2B/image-gallery-2.jpg",
       },
       third: {
         mobile: "./assets/product-zx9-speaker/mobile/image-gallery-3.jpg",
         tablet: "./assets/product-zx9-speaker/tablet/image-gallery-3.jpg",
-        desktop: "./assets/product-zx9-speaker/desktop/image-gallery-3.jpg",
+        desktop: "https://i.ibb.co/C8XktgH/image-category-page-preview.jpg",
       },
     },
     others: [

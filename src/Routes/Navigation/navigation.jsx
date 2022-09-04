@@ -19,20 +19,20 @@ function Navigation() {
     switch (param) {
       case "speakers":
         return (
-          <h1 className="text-white p-10 text-4xl text-center font-extrabold">
-            Speakers
+          <h1 className="text-white p-20 text-4xl text-center font-extrabold">
+            SPEAKERS
           </h1>
         );
       case "headphones":
         return (
-          <h1 className="text-white p-10 text-4xl text-center font-extrabold">
-            Headphones
+          <h1 className="text-white p-20 text-4xl text-center font-extrabold">
+            HEADPHONES
           </h1>
         );
       case "earphones":
         return (
-          <h1 className="text-white p-10 text-4xl text-center font-extrabold">
-            Earphones
+          <h1 className="text-white p-20 text-4xl text-center font-extrabold">
+            EARPHONES
           </h1>
         );
       case "product":

@@ -5,8 +5,6 @@ import { useLocation, useParams } from "react-router-dom";
 function ProductPage() {
   const { setPageStatus } = useContext(HerosectionContext);
   const location = useLocation();
-  const product = useParams();
-  console.log(product);
 
   useEffect(() => {
     setPageStatus(location.pathname.slice(1));
