@@ -35,6 +35,8 @@ function Navigation() {
             Earphones
           </h1>
         );
+      case "product":
+        return null;
       default:
         return <HeroBanner></HeroBanner>;
     }

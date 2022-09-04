@@ -1,5 +1,6 @@
 import HomeHeroImage from "../../assets/home/desktop/image-hero.jpg";
 import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
 function HeroBanner() {
   return (
@@ -14,9 +15,19 @@ function HeroBanner() {
           Expreience natural, lifelike audio and exceptional build quality made
           fir the passionate enthusiast
         </p>
-        <Button className="" size="large" color="success" variant="contained">
-          SEE PRODUCT
-        </Button>
+        <Link to="product">
+          <Button
+            style={{
+              backgroundColor: "#D87D4A",
+              borderRadius: "0px",
+              width: "40%",
+            }}
+            variant="contained"
+            size="large"
+          >
+            SEE PRODUCT
+          </Button>
+        </Link>
       </div>
     </div>
   );
