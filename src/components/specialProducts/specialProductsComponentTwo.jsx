@@ -15,7 +15,7 @@ function SpecialProductsDisplayTwo() {
           style={{
             backgroundColor: "transparent",
             borderRadius: "0px",
-            width: "full",
+            width: "70%",
             borderColor: "black",
             color: "black",
           }}

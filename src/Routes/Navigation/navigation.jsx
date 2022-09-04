@@ -46,6 +46,7 @@ function Navigation() {
         {renderSwitch(pageStatus)}
       </div>
       <Outlet></Outlet>
+      <div>Footer</div>
     </Fragment>
   );
 }

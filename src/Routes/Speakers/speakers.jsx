@@ -1,6 +1,7 @@
 import { useEffect, useContext } from "react";
 import { useLocation } from "react-router-dom";
 import { HerosectionContext } from "../../context/heroSectionContext";
+import About from "../../components/About/About";
 
 function Speaker() {
   const { setPageStatus } = useContext(HerosectionContext);
@@ -11,8 +12,9 @@ function Speaker() {
   }, [location]);
 
   return (
-    <div>
-      <h1 className="text-5xl">I am the Speaker page</h1>
+    <div className="h-fit mr-32 ml-32">
+      <h1 className="text-5xl">I am the Speakers page</h1>
+      <About></About>
     </div>
   );
 }
