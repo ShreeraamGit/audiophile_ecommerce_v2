@@ -4,8 +4,8 @@ import { Button } from "@mui/material";
 
 function SpecialProductsDisplayOne() {
   return (
-    <div className="border relative rounded-xl bg-[#D87D4A] mb-16 h-[38rem]">
-      <Circle className="translate-x-[-15rem]"></Circle>
+    <div className="border relative rounded-xl bg-[#D87D4A] mb-12 h-[38rem]">
+      <Circle className="translate-x-[-10rem]"></Circle>
       <img
         className="absolute bottom-0 left-[8rem] h-[29rem] w-[24rem]"
         src={SpecialProductSpeakerImage}
