@@ -1,9 +1,13 @@
 import { ReactComponent as Logo } from "../../assets/shared/desktop/logo.svg";
 import { Link } from "react-router-dom";
+import { ReactComponent as FacebookLogo } from "../../assets/shared/desktop/icon-facebook.svg";
+import { ReactComponent as InstagramLogo } from "../../assets/shared/desktop/icon-instagram.svg";
+import { ReactComponent as TwitterLogo } from "../../assets/shared/desktop/icon-twitter.svg";
+
 function Footer() {
   return (
-    <div className="h-[25rem] border bg-[#101010] text-white flex">
-      <div className="border text-white mr-32 ml-32 h-full w-1/2 space-y-5 flex flex-col justify-center">
+    <div className="h-[25rem] gap-32 bg-[#101010] text-white flex">
+      <div className="ml-32 w-1/2 flex flex-col space-y-10 justify-center">
         <Logo></Logo>
         <p className="tracking-wider">
           Audiophile is an all in one stop to fulfil your audio needs. We're a
@@ -13,8 +17,8 @@ function Footer() {
         </p>
         <h3>Copyright ® 2022. All Rights Reserved </h3>
       </div>
-      <div className="border h-full w-1/2">
-        <div className="flex flex-row justify-items-center border gap-10 font-extrabold">
+      <div className="mr-32 w-1/2 flex flex-col justify-center space-y-48">
+        <div className="flex gap-5 justify-end font-bold tracking-widest">
           <Link to="/">
             <div className="">HOME</div>
           </Link>
@@ -27,6 +31,11 @@ function Footer() {
           <Link to="/earphones">
             <div className="">EARPHONES</div>
           </Link>
+        </div>
+        <div className="flex justify-end gap-5">
+          <FacebookLogo className=""></FacebookLogo>
+          <TwitterLogo></TwitterLogo>
+          <InstagramLogo></InstagramLogo>
         </div>
       </div>
     </div>

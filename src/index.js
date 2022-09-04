@@ -6,11 +6,13 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { ProductsProvider } from "./context/productContext";
 import { HerosectionProvider } from "./context/heroSectionContext.jsx";
+import ScrollToTop from "./components/scrollToTop/scrollToTop.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+      <ScrollToTop />
       <ProductsProvider>
         <HerosectionProvider>
           <App />
