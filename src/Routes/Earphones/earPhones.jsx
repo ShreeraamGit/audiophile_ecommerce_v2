@@ -4,11 +4,10 @@ import { HerosectionContext } from "../../context/heroSectionContext";
 import About from "../../components/About/About";
 import ProductsPreview from "../../components/ProductsPreview/productsPreview";
 import CategoryDisplay from "../../components/categoryDisplay/categoryDisplay";
-import { ProductContext } from "../../context/productContext";
 
-function Earphones() {
+function Earphones(props) {
+  const { products } = props;
   const { pageStatus, setPageStatus } = useContext(HerosectionContext);
-  const { products, setProducts } = useContext(ProductContext);
   const location = useLocation();
 
   useEffect(() => {

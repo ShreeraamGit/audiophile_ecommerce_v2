@@ -12,7 +12,7 @@ function Navigation() {
   const location = useLocation();
 
   useEffect(() => {
-    setPageStatus(location.pathname.slice(1));
+    setPageStatus(location.pathname);
   }, [location]);
 
   const renderSwitch = (param) => {
@@ -35,10 +35,10 @@ function Navigation() {
             EARPHONES
           </h1>
         );
-      case "product":
-        return null;
-      default:
+      case "/":
         return <HeroBanner></HeroBanner>;
+      default:
+        return "";
     }
   };
 

@@ -6,7 +6,7 @@ export const SHOP_DATA = [
     image: {
       mobile: "./assets/product-yx1-earphones/mobile/image-product.jpg",
       tablet: "./assets/product-yx1-earphones/tablet/image-product.jpg",
-      desktop: "./assets/product-yx1-earphones/desktop/image-product.jpg",
+      desktop: "https://i.ibb.co/jy2dWtP/image-category-page-preview.jpg",
     },
     category: "earphones",
     categoryImage: {
@@ -49,17 +49,17 @@ export const SHOP_DATA = [
       first: {
         mobile: "./assets/product-yx1-earphones/mobile/image-gallery-1.jpg",
         tablet: "./assets/product-yx1-earphones/tablet/image-gallery-1.jpg",
-        desktop: "./assets/product-yx1-earphones/desktop/image-gallery-1.jpg",
+        desktop: "https://i.ibb.co/C8pTKKL/image-gallery-1.jpg",
       },
       second: {
         mobile: "./assets/product-yx1-earphones/mobile/image-gallery-2.jpg",
         tablet: "./assets/product-yx1-earphones/tablet/image-gallery-2.jpg",
-        desktop: "./assets/product-yx1-earphones/desktop/image-gallery-2.jpg",
+        desktop: "https://i.ibb.co/3fvD2RR/image-gallery-2.jpg",
       },
       third: {
         mobile: "./assets/product-yx1-earphones/mobile/image-gallery-3.jpg",
         tablet: "./assets/product-yx1-earphones/tablet/image-gallery-3.jpg",
-        desktop: "./assets/product-yx1-earphones/desktop/image-gallery-3.jpg",
+        desktop: "https://i.ibb.co/9HWqnVL/image-gallery-3.jpg",
       },
     },
     others: [
@@ -99,7 +99,7 @@ export const SHOP_DATA = [
     image: {
       mobile: "./assets/product-xx59-headphones/mobile/image-product.jpg",
       tablet: "./assets/product-xx59-headphones/tablet/image-product.jpg",
-      desktop: "./assets/product-xx59-headphones/desktop/image-product.jpg",
+      desktop: "https://i.ibb.co/B4yGVqN/image-category-page-preview.jpg",
     },
     category: "headphones",
     categoryImage: {
@@ -138,17 +138,17 @@ export const SHOP_DATA = [
       first: {
         mobile: "./assets/product-xx59-headphones/mobile/image-gallery-1.jpg",
         tablet: "./assets/product-xx59-headphones/tablet/image-gallery-1.jpg",
-        desktop: "./assets/product-xx59-headphones/desktop/image-gallery-1.jpg",
+        desktop: "https://i.ibb.co/G74B1Lw/image-gallery-1.jpg",
       },
       second: {
         mobile: "./assets/product-xx59-headphones/mobile/image-gallery-2.jpg",
         tablet: "./assets/product-xx59-headphones/tablet/image-gallery-2.jpg",
-        desktop: "./assets/product-xx59-headphones/desktop/image-gallery-2.jpg",
+        desktop: "https://i.ibb.co/JyFcvYc/image-gallery-2.jpg",
       },
       third: {
         mobile: "./assets/product-xx59-headphones/mobile/image-gallery-3.jpg",
         tablet: "./assets/product-xx59-headphones/tablet/image-gallery-3.jpg",
-        desktop: "./assets/product-xx59-headphones/desktop/image-gallery-3.jpg",
+        desktop: "https://i.ibb.co/WBGJ7V1/image-gallery-3.jpg",
       },
     },
     others: [
@@ -190,8 +190,7 @@ export const SHOP_DATA = [
         "./assets/product-xx99-mark-one-headphones/mobile/image-product.jpg",
       tablet:
         "./assets/product-xx99-mark-one-headphones/tablet/image-product.jpg",
-      desktop:
-        "./assets/product-xx99-mark-one-headphones/desktop/image-product.jpg",
+      desktop: "https://i.ibb.co/Pcbpgjf/image-category-page-preview.jpg",
     },
     category: "headphones",
     categoryImage: {
@@ -232,24 +231,21 @@ export const SHOP_DATA = [
           "./assets/product-xx99-mark-one-headphones/mobile/image-gallery-1.jpg",
         tablet:
           "./assets/product-xx99-mark-one-headphones/tablet/image-gallery-1.jpg",
-        desktop:
-          "./assets/product-xx99-mark-one-headphones/desktop/image-gallery-1.jpg",
+        desktop: "https://i.ibb.co/WkHbpvS/image-gallery-1.jpg",
       },
       second: {
         mobile:
           "./assets/product-xx99-mark-one-headphones/mobile/image-gallery-2.jpg",
         tablet:
           "./assets/product-xx99-mark-one-headphones/tablet/image-gallery-2.jpg",
-        desktop:
-          "./assets/product-xx99-mark-one-headphones/desktop/image-gallery-2.jpg",
+        desktop: "https://i.ibb.co/nrrzqgK/image-gallery-2.jpg",
       },
       third: {
         mobile:
           "./assets/product-xx99-mark-one-headphones/mobile/image-gallery-3.jpg",
         tablet:
           "./assets/product-xx99-mark-one-headphones/tablet/image-gallery-3.jpg",
-        desktop:
-          "./assets/product-xx99-mark-one-headphones/desktop/image-gallery-3.jpg",
+        desktop: "https://i.ibb.co/gDxn7MG/image-gallery-3.jpg",
       },
     },
     others: [
@@ -291,8 +287,7 @@ export const SHOP_DATA = [
         "./assets/product-xx99-mark-two-headphones/mobile/image-product.jpg",
       tablet:
         "./assets/product-xx99-mark-two-headphones/tablet/image-product.jpg",
-      desktop:
-        "./assets/product-xx99-mark-two-headphones/desktop/image-product.jpg",
+      desktop: "https://i.ibb.co/vmJcr6k/image-category-page-preview.jpg",
     },
     category: "headphones",
     categoryImage: {
@@ -337,24 +332,21 @@ export const SHOP_DATA = [
           "./assets/product-xx99-mark-two-headphones/mobile/image-gallery-1.jpg",
         tablet:
           "./assets/product-xx99-mark-two-headphones/tablet/image-gallery-1.jpg",
-        desktop:
-          "./assets/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg",
+        desktop: "https://i.ibb.co/8cxZSKV/image-gallery-1.jpg",
       },
       second: {
         mobile:
           "./assets/product-xx99-mark-two-headphones/mobile/image-gallery-2.jpg",
         tablet:
           "./assets/product-xx99-mark-two-headphones/tablet/image-gallery-2.jpg",
-        desktop:
-          "./assets/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg",
+        desktop: "https://i.ibb.co/zWcBr0N/image-gallery-2.jpg",
       },
       third: {
         mobile:
           "./assets/product-xx99-mark-two-headphones/mobile/image-gallery-3.jpg",
         tablet:
           "./assets/product-xx99-mark-two-headphones/tablet/image-gallery-3.jpg",
-        desktop:
-          "./assets/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg",
+        desktop: "https://i.ibb.co/48kmRGr/image-gallery-3.jpg",
       },
     },
     others: [
@@ -485,8 +477,8 @@ export const SHOP_DATA = [
     slug: "zx9-speaker",
     name: "ZX9 Speaker",
     image: {
-      mobile: "./assets/product-zx9-speaker/mobile/image-product.jpg",
-      tablet: "./assets/product-zx9-speaker/tablet/image-product.jpg",
+      mobile: "https://i.ibb.co/RypCQnL/image-category-page-preview.jpg",
+      tablet: "https://i.ibb.co/gD5rcJn/image-category-page-preview.jpg",
       desktop: "https://i.ibb.co/cynms90/image-product.jpg",
     },
     category: "speakers",
@@ -528,17 +520,17 @@ export const SHOP_DATA = [
     ],
     gallery: {
       first: {
-        mobile: "./assets/product-zx9-speaker/mobile/image-gallery-1.jpg",
-        tablet: "./assets/product-zx9-speaker/tablet/image-gallery-1.jpg",
+        mobile: "https://i.ibb.co/7kFcdMT/image-gallery-1.jpg",
+        tablet: "https://i.ibb.co/qxH5Q3Z/image-gallery-1.jpg",
         desktop: "https://i.ibb.co/q0Zs2kB/image-gallery-3.jpg",
       },
       second: {
-        mobile: "./assets/product-zx9-speaker/mobile/image-gallery-2.jpg",
+        mobile: "https://i.ibb.co/yQLymg4/image-gallery-2.jpg",
         tablet: "./assets/product-zx9-speaker/tablet/image-gallery-2.jpg",
         desktop: "https://i.ibb.co/DV8pQ2B/image-gallery-2.jpg",
       },
       third: {
-        mobile: "./assets/product-zx9-speaker/mobile/image-gallery-3.jpg",
+        mobile: "https://i.ibb.co/5LB23r4/image-gallery-3.jpg",
         tablet: "./assets/product-zx9-speaker/tablet/image-gallery-3.jpg",
         desktop: "https://i.ibb.co/C8XktgH/image-category-page-preview.jpg",
       },

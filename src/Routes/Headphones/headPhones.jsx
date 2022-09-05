@@ -1,14 +1,13 @@
 import { useLocation } from "react-router-dom";
 import { useEffect, useContext } from "react";
 import { HerosectionContext } from "../../context/heroSectionContext";
-import { ProductContext } from "../../context/productContext";
 import About from "../../components/About/About";
 import ProductsPreview from "../../components/ProductsPreview/productsPreview";
 import CategoryDisplay from "../../components/categoryDisplay/categoryDisplay";
 
-function Headphones() {
+function Headphones(props) {
   const { pageStatus, setPageStatus } = useContext(HerosectionContext);
-  const { products } = useContext(ProductContext);
+  const { products } = props;
   const location = useLocation();
 
   useEffect(() => {
