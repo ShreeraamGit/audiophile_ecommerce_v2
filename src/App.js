@@ -26,11 +26,21 @@ function App() {
         <Route
           path="earphones"
           element={<Earphones products={products}></Earphones>}
-        ></Route>
+        >
+          <Route
+            path=":productId"
+            element={<ProductPage products={products}></ProductPage>}
+          ></Route>
+        </Route>
         <Route
           path="headphones"
           element={<Headphones products={products}></Headphones>}
-        ></Route>
+        >
+          <Route
+            path=":productId"
+            element={<ProductPage products={products}></ProductPage>}
+          ></Route>
+        </Route>
       </Route>
     </Routes>
   );

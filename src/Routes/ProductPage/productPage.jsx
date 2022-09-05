@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom";
 import ProductBuyingComponent from "../../components/productBuyingComponent/productBuyingComponent";
 import ProductDescription from "../../components/productDecriptionComponent/productDescriptionComponent";
+import Gallery from "../../components/gallery/gallery";
+import MayAlsoLikeComponent from "../../components/mayalsolikecomponent/mayAlsoLikeComponent";
 
 function ProductPage(props) {
   const { products } = props;
@@ -11,11 +13,13 @@ function ProductPage(props) {
   );
 
   return (
-    <div className="mt-28">
+    <div className="mt-0">
       <ProductBuyingComponent
         products={seletedProduct}
       ></ProductBuyingComponent>
       <ProductDescription products={seletedProduct}></ProductDescription>
+      <Gallery products={seletedProduct}></Gallery>
+      <MayAlsoLikeComponent products={seletedProduct}></MayAlsoLikeComponent>
     </div>
   );
 }

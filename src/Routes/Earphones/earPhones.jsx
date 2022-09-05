@@ -1,5 +1,5 @@
 import { useEffect, useContext } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Outlet } from "react-router-dom";
 import { HerosectionContext } from "../../context/heroSectionContext";
 import About from "../../components/About/About";
 import ProductsPreview from "../../components/ProductsPreview/productsPreview";
@@ -12,7 +12,7 @@ function Earphones(props) {
 
   useEffect(() => {
     setPageStatus(location.pathname.slice(1));
-  }, [location]);
+  });
 
   const filteredProducts = products.filter(
     (items) => items.category === pageStatus
@@ -24,6 +24,7 @@ function Earphones(props) {
         {filteredProducts.map((items) => (
           <ProductsPreview key={items.id} products={items}></ProductsPreview>
         ))}
+        <Outlet></Outlet>
       </div>
       <CategoryDisplay></CategoryDisplay>
       <About></About>

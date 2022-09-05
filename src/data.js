@@ -69,7 +69,8 @@ export const SHOP_DATA = [
         image: {
           mobile: "./assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
           tablet: "./assets/shared/tablet/image-xx99-mark-one-headphones.jpg",
-          desktop: "./assets/shared/desktop/image-xx99-mark-one-headphones.jpg",
+          desktop:
+            "https://i.ibb.co/w78zW2H/image-xx99-mark-one-headphones.jpg",
         },
       },
       {
@@ -78,7 +79,7 @@ export const SHOP_DATA = [
         image: {
           mobile: "./assets/shared/mobile/image-xx59-headphones.jpg",
           tablet: "./assets/shared/tablet/image-xx59-headphones.jpg",
-          desktop: "./assets/shared/desktop/image-xx59-headphones.jpg",
+          desktop: "https://i.ibb.co/NpL1Z0h/image-xx59-headphones.jpg",
         },
       },
       {
@@ -87,7 +88,7 @@ export const SHOP_DATA = [
         image: {
           mobile: "./assets/shared/mobile/image-zx9-speaker.jpg",
           tablet: "./assets/shared/tablet/image-zx9-speaker.jpg",
-          desktop: "./assets/shared/desktop/image-zx9-speaker.jpg",
+          desktop: "https://i.ibb.co/MnGbz4M/image-zx9-speaker.jpg",
         },
       },
     ],
@@ -158,7 +159,8 @@ export const SHOP_DATA = [
         image: {
           mobile: "./assets/shared/mobile/image-xx99-mark-two-headphones.jpg",
           tablet: "./assets/shared/tablet/image-xx99-mark-two-headphones.jpg",
-          desktop: "./assets/shared/desktop/image-xx99-mark-two-headphones.jpg",
+          desktop:
+            "https://i.ibb.co/6gTFGt2/image-xx99-mark-two-headphones.jpg",
         },
       },
       {
@@ -167,7 +169,8 @@ export const SHOP_DATA = [
         image: {
           mobile: "./assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
           tablet: "./assets/shared/tablet/image-xx99-mark-one-headphones.jpg",
-          desktop: "./assets/shared/desktop/image-xx99-mark-one-headphones.jpg",
+          desktop:
+            "https://i.ibb.co/w78zW2H/image-xx99-mark-one-headphones.jpg",
         },
       },
       {
@@ -176,7 +179,7 @@ export const SHOP_DATA = [
         image: {
           mobile: "./assets/shared/mobile/image-zx9-speaker.jpg",
           tablet: "./assets/shared/tablet/image-zx9-speaker.jpg",
-          desktop: "./assets/shared/desktop/image-zx9-speaker.jpg",
+          desktop: "https://i.ibb.co/MnGbz4M/image-zx9-speaker.jpg",
         },
       },
     ],
@@ -255,7 +258,8 @@ export const SHOP_DATA = [
         image: {
           mobile: "./assets/shared/mobile/image-xx99-mark-two-headphones.jpg",
           tablet: "./assets/shared/tablet/image-xx99-mark-two-headphones.jpg",
-          desktop: "./assets/shared/desktop/image-xx99-mark-two-headphones.jpg",
+          desktop:
+            "https://i.ibb.co/6gTFGt2/image-xx99-mark-two-headphones.jpg",
         },
       },
       {
@@ -264,7 +268,7 @@ export const SHOP_DATA = [
         image: {
           mobile: "./assets/shared/mobile/image-xx59-headphones.jpg",
           tablet: "./assets/shared/tablet/image-xx59-headphones.jpg",
-          desktop: "./assets/shared/desktop/image-xx59-headphones.jpg",
+          desktop: "https://i.ibb.co/NpL1Z0h/image-xx59-headphones.jpg",
         },
       },
       {
@@ -273,7 +277,7 @@ export const SHOP_DATA = [
         image: {
           mobile: "./assets/shared/mobile/image-zx9-speaker.jpg",
           tablet: "./assets/shared/tablet/image-zx9-speaker.jpg",
-          desktop: "./assets/shared/desktop/image-zx9-speaker.jpg",
+          desktop: "https://i.ibb.co/MnGbz4M/image-zx9-speaker.jpg",
         },
       },
     ],
@@ -356,7 +360,8 @@ export const SHOP_DATA = [
         image: {
           mobile: "./assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
           tablet: "./assets/shared/tablet/image-xx99-mark-one-headphones.jpg",
-          desktop: "./assets/shared/desktop/image-xx99-mark-one-headphones.jpg",
+          desktop:
+            "https://i.ibb.co/w78zW2H/image-xx99-mark-one-headphones.jpg",
         },
       },
       {
@@ -365,7 +370,7 @@ export const SHOP_DATA = [
         image: {
           mobile: "./assets/shared/mobile/image-xx59-headphones.jpg",
           tablet: "./assets/shared/tablet/image-xx59-headphones.jpg",
-          desktop: "./assets/shared/desktop/image-xx59-headphones.jpg",
+          desktop: "https://i.ibb.co/NpL1Z0h/image-xx59-headphones.jpg",
         },
       },
       {
@@ -374,7 +379,7 @@ export const SHOP_DATA = [
         image: {
           mobile: "./assets/shared/mobile/image-zx9-speaker.jpg",
           tablet: "./assets/shared/tablet/image-zx9-speaker.jpg",
-          desktop: "./assets/shared/desktop/image-zx9-speaker.jpg",
+          desktop: "https://i.ibb.co/MnGbz4M/image-zx9-speaker.jpg",
         },
       },
     ],
@@ -434,7 +439,7 @@ export const SHOP_DATA = [
       second: {
         mobile: "https://i.ibb.co/Yy7sL2f/image-gallery-2.jpg",
         tablet: "https://i.ibb.co/V2PDbkb/image-gallery-2.jpg",
-        desktop: "https://i.ibb.co/Btd1xr5/image-gallery-2.jpg",
+        desktop: "https://i.ibb.co/Yy7sL2f/image-gallery-2.jpg",
       },
       third: {
         mobile: "https://i.ibb.co/QcFwSmL/image-gallery-3.jpg",
@@ -449,7 +454,7 @@ export const SHOP_DATA = [
         image: {
           mobile: "./assets/shared/mobile/image-zx9-speaker.jpg",
           tablet: "./assets/shared/tablet/image-zx9-speaker.jpg",
-          desktop: "./assets/shared/desktop/image-zx9-speaker.jpg",
+          desktop: "https://i.ibb.co/MnGbz4M/image-zx9-speaker.jpg",
         },
       },
       {
@@ -458,7 +463,8 @@ export const SHOP_DATA = [
         image: {
           mobile: "./assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
           tablet: "./assets/shared/tablet/image-xx99-mark-one-headphones.jpg",
-          desktop: "./assets/shared/desktop/image-xx99-mark-one-headphones.jpg",
+          desktop:
+            "https://i.ibb.co/6gTFGt2/image-xx99-mark-two-headphones.jpg",
         },
       },
       {
@@ -467,7 +473,7 @@ export const SHOP_DATA = [
         image: {
           mobile: "./assets/shared/mobile/image-xx59-headphones.jpg",
           tablet: "./assets/shared/tablet/image-xx59-headphones.jpg",
-          desktop: "./assets/shared/desktop/image-xx59-headphones.jpg",
+          desktop: "https://i.ibb.co/NpL1Z0h/image-xx59-headphones.jpg",
         },
       },
     ],
@@ -542,7 +548,7 @@ export const SHOP_DATA = [
         image: {
           mobile: "./assets/shared/mobile/image-zx7-speaker.jpg",
           tablet: "./assets/shared/tablet/image-zx7-speaker.jpg",
-          desktop: "./assets/shared/desktop/image-zx7-speaker.jpg",
+          desktop: "https://i.ibb.co/mqPCsdT/image-zx7-speaker.jpg",
         },
       },
       {
@@ -551,7 +557,8 @@ export const SHOP_DATA = [
         image: {
           mobile: "./assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
           tablet: "./assets/shared/tablet/image-xx99-mark-one-headphones.jpg",
-          desktop: "./assets/shared/desktop/image-xx99-mark-one-headphones.jpg",
+          desktop:
+            "https://i.ibb.co/w78zW2H/image-xx99-mark-one-headphones.jpg",
         },
       },
       {
@@ -560,7 +567,7 @@ export const SHOP_DATA = [
         image: {
           mobile: "./assets/shared/mobile/image-xx59-headphones.jpg",
           tablet: "./assets/shared/tablet/image-xx59-headphones.jpg",
-          desktop: "./assets/shared/desktop/image-xx59-headphones.jpg",
+          desktop: "https://i.ibb.co/NpL1Z0h/image-xx59-headphones.jpg",
         },
       },
     ],
