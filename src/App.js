@@ -20,7 +20,7 @@ function App() {
         >
           <Route
             path=":productId"
-            element={<ProductPage></ProductPage>}
+            element={<ProductPage products={products}></ProductPage>}
           ></Route>
         </Route>
         <Route

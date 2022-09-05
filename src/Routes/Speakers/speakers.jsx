@@ -8,6 +8,7 @@ import CategoryDisplay from "../../components/categoryDisplay/categoryDisplay";
 
 function Speaker(props) {
   const { products } = props;
+
   const { pageStatus, setPageStatus } = useContext(HerosectionContext);
   const location = useLocation();
 

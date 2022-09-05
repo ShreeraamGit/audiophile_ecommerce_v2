@@ -1,12 +1,22 @@
-import { useParams, useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import ProductBuyingComponent from "../../components/productBuyingComponent/productBuyingComponent";
+import ProductDescription from "../../components/productDecriptionComponent/productDescriptionComponent";
 
-function ProductPage() {
-  let params = useParams();
+function ProductPage(props) {
+  const { products } = props;
+  const { productId } = useParams();
+
+  const seletedProduct = products.find(
+    (items) => items.id === Number(productId)
+  );
 
   return (
-    <h1 className="text-7xl text-center">
-      I am the product page of {params.productId}
-    </h1>
+    <div className="mt-28">
+      <ProductBuyingComponent
+        products={seletedProduct}
+      ></ProductBuyingComponent>
+      <ProductDescription products={seletedProduct}></ProductDescription>
+    </div>
   );
 }
 
