@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { ProductsProvider } from "./context/productContext";
 import { HerosectionProvider } from "./context/heroSectionContext.jsx";
+import { CartProvider } from "./context/cartContext";
 import ScrollToTop from "./components/scrollToTop/scrollToTop.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -15,7 +16,9 @@ root.render(
       <ScrollToTop />
       <ProductsProvider>
         <HerosectionProvider>
-          <App />
+          <CartProvider>
+            <App />
+          </CartProvider>
         </HerosectionProvider>
       </ProductsProvider>
     </BrowserRouter>

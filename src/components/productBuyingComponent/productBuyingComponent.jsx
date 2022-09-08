@@ -1,5 +1,6 @@
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
+import AddtoCartCountIncrease from "../addToCartCountIncreaseComponent/addToCartCountIncreaseComponent";
 
 function ProductBuyingComponent(props) {
   const { products } = props;
@@ -31,17 +32,19 @@ function ProductBuyingComponent(props) {
               currency: "EUR",
             })}
           </p>
-          <Button
-            style={{
-              backgroundColor: "#D87D4A",
-              borderRadius: "0px",
-              width: "36%",
-            }}
-            variant="contained"
-            size="large"
-          >
-            ADD TO CART
-          </Button>
+          <div className="flex gap-10">
+            <AddtoCartCountIncrease></AddtoCartCountIncrease>
+            <Button
+              style={{
+                backgroundColor: "#D87D4A",
+                borderRadius: "0px",
+              }}
+              variant="contained"
+              size="large"
+            >
+              ADD TO CART
+            </Button>
+          </div>
         </div>
       </div>
     </div>

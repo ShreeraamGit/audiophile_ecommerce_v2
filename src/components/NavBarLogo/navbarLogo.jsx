@@ -4,8 +4,11 @@ import { ReactComponent as Logo } from "../../assets/shared/desktop/logo.svg";
 import { useContext } from "react";
 import { HerosectionContext } from "../../context/heroSectionContext";
 import { ProductContext } from "../../context/productContext";
+import { CartContext } from "../../context/cartContext";
+import CartDropDownContainer from "../cartDropDownContainer/cartDropDownContainer";
 
 function Navbarwithlogo() {
+  const { currentIconState, cartIconHandler } = useContext(CartContext);
   return (
     <div className="flex justify-between items-center mr-32 ml-32 nav-items border-b border-[#FBAF85] text-white ">
       <Logo className="h-6"></Logo>
@@ -23,7 +26,11 @@ function Navbarwithlogo() {
           <div className="">EARPHONES</div>
         </Link>
       </div>
-      <Cart className="h-6 w-6 mb-5 mt-7"></Cart>
+      <Cart
+        onClick={cartIconHandler}
+        className="h-6 w-6 mb-5 mt-7 cursor-pointer"
+      ></Cart>
+      {currentIconState && <CartDropDownContainer></CartDropDownContainer>}
     </div>
   );
 }
