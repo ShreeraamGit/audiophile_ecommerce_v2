@@ -8,6 +8,7 @@ import { ProductContext } from "../../context/productContext";
 function ProductBuyingComponent(props) {
   const { addItemToCart } = useContext(CartContext);
   const { selectedproducts } = props;
+  ///console.log(selectedproducts);
 
   const addProductToCart = () => addItemToCart(selectedproducts);
 

@@ -10,6 +10,7 @@ import { useContext } from "react";
 
 function App() {
   const { products } = useContext(ProductContext);
+  ///console.log(products);
   return (
     <Routes>
       <Route path="/" element={<Navigation></Navigation>}>
