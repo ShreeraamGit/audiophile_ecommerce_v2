@@ -5,7 +5,7 @@ function AddtoCartCountIncrease(props) {
   const { items } = props;
   const { cartItems, handleClickIncrement, handleClickDecrement } =
     useContext(CartContext);
-  ///console.log(cartItems);
+  console.log(cartItems);
   ///console.log(items);
 
   return (

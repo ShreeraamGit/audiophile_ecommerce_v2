@@ -28,7 +28,13 @@ function CartDropDownContainer() {
       </div>
       <div className="mt-10 mb-10 flex justify-between">
         <h1 className="text-xl tracking-widest">TOTAL</h1>
-        <h1 className="text-2xl font-bold tracking-widest">$ {total}</h1>
+        <h1 className="text-2xl font-bold tracking-widest">
+          {" "}
+          {total.toLocaleString("en-US", {
+            style: "currency",
+            currency: "EUR",
+          })}
+        </h1>
       </div>
       <div className="mt-10 mb-10">
         <Button

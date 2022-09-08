@@ -11,12 +11,23 @@ const addCartItem = (cartItems, productToAdd) => {
   if (existingCartItems) {
     return cartItems.map((items) =>
       items.id === productToAdd.id
-        ? { ...items, quantity: items.quantity + 1 }
+        ? {
+            ...items,
+            quantity: items.quantity + 1,
+            totalPrice: (items.quantity + 1) * items.price,
+          }
         : items
     );
   }
   //return new array with modified cartitems/newcartitem.
-  return [...cartItems, { ...productToAdd, quantity: 1 }];
+  return [
+    ...cartItems,
+    {
+      ...productToAdd,
+      quantity: 1,
+      totalPrice: productToAdd.price,
+    },
+  ];
 };
 
 export const CartContext = createContext({
@@ -54,6 +65,7 @@ export const CartProvider = ({ children }) => {
     counters[idx] = {
       ...counters[idx],
       quantity: counters[idx].quantity + 1,
+      totalPrice: counters[idx].totalPrice + counters[idx].price,
     };
     setCartItems(counters);
     ///console.log(newCartItems);
@@ -66,6 +78,7 @@ export const CartProvider = ({ children }) => {
       counters[idx] = {
         ...counters[idx],
         quantity: counters[idx].quantity - 1,
+        totalPrice: counters[idx].totalPrice - counters[idx].price,
       };
       setCartItems(counters);
     } else {
@@ -80,6 +93,14 @@ export const CartProvider = ({ children }) => {
     });
     setCartItems(deletedCartItems);
   };
+
+  useEffect(() => {
+    const newTotalCount = cartItems.reduce(
+      (total, cartItem) => total + cartItem.totalPrice,
+      0
+    );
+    setTotal(newTotalCount);
+  }, [cartItems]);
 
   const value = {
     currentIconState,
