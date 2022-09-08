@@ -7,6 +7,7 @@ export const SHOP_DATA = [
       mobile: "./assets/product-yx1-earphones/mobile/image-product.jpg",
       tablet: "./assets/product-yx1-earphones/tablet/image-product.jpg",
       desktop: "https://i.ibb.co/jy2dWtP/image-category-page-preview.jpg",
+      cart: "https://i.ibb.co/5151vHd/image-yx1-earphones.jpg",
     },
     category: "earphones",
     categoryImage: {
@@ -101,6 +102,7 @@ export const SHOP_DATA = [
       mobile: "./assets/product-xx59-headphones/mobile/image-product.jpg",
       tablet: "./assets/product-xx59-headphones/tablet/image-product.jpg",
       desktop: "https://i.ibb.co/B4yGVqN/image-category-page-preview.jpg",
+      cart: "https://i.ibb.co/Lv3ZVq6/image-xx59-headphones.jpg",
     },
     category: "headphones",
     categoryImage: {
@@ -194,6 +196,7 @@ export const SHOP_DATA = [
       tablet:
         "./assets/product-xx99-mark-one-headphones/tablet/image-product.jpg",
       desktop: "https://i.ibb.co/Pcbpgjf/image-category-page-preview.jpg",
+      cart: "https://i.ibb.co/hB06cz4/image-xx99-mark-one-headphones.jpg",
     },
     category: "headphones",
     categoryImage: {
@@ -292,6 +295,7 @@ export const SHOP_DATA = [
       tablet:
         "./assets/product-xx99-mark-two-headphones/tablet/image-product.jpg",
       desktop: "https://i.ibb.co/vmJcr6k/image-category-page-preview.jpg",
+      cart: "https://i.ibb.co/SNVXS1D/image-xx99-mark-two-headphones.jpg",
     },
     category: "headphones",
     categoryImage: {
@@ -392,6 +396,7 @@ export const SHOP_DATA = [
       mobile: "https://i.ibb.co/26Fxwz5/image-category-page-preview.jpg",
       tablet: "https://i.ibb.co/S6dWFjR/image-category-page-preview.jpg",
       desktop: "https://i.ibb.co/NFr73g7/image-product.jpg",
+      cart: "https://i.ibb.co/5sFc2Y6/image-zx7-speaker.jpg",
     },
     category: "speakers",
     categoryImage: {
@@ -486,6 +491,7 @@ export const SHOP_DATA = [
       mobile: "https://i.ibb.co/RypCQnL/image-category-page-preview.jpg",
       tablet: "https://i.ibb.co/gD5rcJn/image-category-page-preview.jpg",
       desktop: "https://i.ibb.co/cynms90/image-product.jpg",
+      cart: "https://i.ibb.co/bKMZQBB/image-zx9-speaker.jpg",
     },
     category: "speakers",
     categoryImage: {

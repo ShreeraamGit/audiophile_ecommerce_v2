@@ -1,19 +1,22 @@
 import CategoryHeadphoneImage from "../../assets/cart/image-xx59-headphones.jpg";
 import AddtoCartCountIncrease from "../addToCartCountIncreaseComponent/addToCartCountIncreaseComponent";
 
-function CartItemsComponent() {
+function CartItemsComponent(props) {
+  const { cartItems } = props;
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex justify-between items-center gap-7">
       <img
-        className="h-[5rem] w-[5rem] rounded-lg"
-        src={CategoryHeadphoneImage}
-        alt="HeroImage"
+        className="rounded-lg h-[5rem] w-[5rem]"
+        src={cartItems.image.cart}
+        alt={cartItems.name}
       />
-      <div className="flex flex-col justify-center items-center space-y-3">
-        <h1 className="text-xl font-bold">XX99 MK II</h1>
-        <h1 className="mr-auto">$ 2,999</h1>
+      <div className="mr-auto flex flex-col justify-center items-center space-y-3">
+        <h1 className="text-[1.45rem] font-bold">
+          {cartItems.name.substring(0, cartItems.name.indexOf(" "))}
+        </h1>
+        <h1 className="mr-auto text-lg">$ {cartItems.price}</h1>
       </div>
-      <AddtoCartCountIncrease></AddtoCartCountIncrease>
+      <AddtoCartCountIncrease cartItems={cartItems}></AddtoCartCountIncrease>
     </div>
   );
 }

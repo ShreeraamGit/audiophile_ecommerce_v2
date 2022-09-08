@@ -15,11 +15,15 @@ function ProductPage(props) {
   return (
     <div className="mt-0">
       <ProductBuyingComponent
-        products={seletedProduct}
+        selectedproducts={seletedProduct}
       ></ProductBuyingComponent>
-      <ProductDescription products={seletedProduct}></ProductDescription>
-      <Gallery products={seletedProduct}></Gallery>
-      <MayAlsoLikeComponent products={seletedProduct}></MayAlsoLikeComponent>
+      <ProductDescription
+        selectedproducts={seletedProduct}
+      ></ProductDescription>
+      <Gallery selectedproducts={seletedProduct}></Gallery>
+      <MayAlsoLikeComponent
+        selectedproducts={seletedProduct}
+      ></MayAlsoLikeComponent>
     </div>
   );
 }
