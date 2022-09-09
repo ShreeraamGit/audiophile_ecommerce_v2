@@ -57,6 +57,7 @@ function App() {
             ></Route>
           </Route>
         </Route>
+        <Route path="checkout" element={<h1>Check out page</h1>}></Route>
       </Route>
     </Routes>
   );

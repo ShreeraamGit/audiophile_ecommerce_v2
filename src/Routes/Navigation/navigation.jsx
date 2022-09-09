@@ -37,6 +37,9 @@ function Navigation() {
         );
       case "/":
         return <HeroBanner></HeroBanner>;
+
+      case "/checkout":
+        return "";
       default:
         return (
           <h1 className="text-white p-20 text-4xl text-center font-extrabold">

@@ -2,11 +2,11 @@ import CartItemsComponent from "../cartItemsComponent/cartItemsComponent";
 import Button from "@mui/material/Button";
 import { CartContext } from "../../context/cartContext";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 
 function CartDropDownContainer() {
-  const { cartItems, removeItemsFromCart, total } = useContext(CartContext);
-
-  ///console.log(cartItems);
+  const { cartItems, removeItemsFromCart, total, cartIconHandler } =
+    useContext(CartContext);
 
   return (
     <div className="pr-10 pl-10 z-50 text-[#101010] bg-[#FFFFFF] rounded-lg absolute top-[14%] right-[5%] h-fit w-[30.5rem]">
@@ -22,6 +22,13 @@ function CartDropDownContainer() {
         </button>
       </div>
       <div className="mt-10 flex flex-col gap-7">
+        {cartItems.length === 0 && (
+          <div className="flex justify-center items-center">
+            <h2 className="text-2xl font-bold">
+              OOPS YOUR CART IS EMPTY <span className="text-2xl">😳</span>{" "}
+            </h2>
+          </div>
+        )}
         {cartItems.map((items) => (
           <CartItemsComponent key={items.id} items={items}></CartItemsComponent>
         ))}
@@ -37,17 +44,24 @@ function CartDropDownContainer() {
         </h1>
       </div>
       <div className="mt-10 mb-10">
-        <Button
-          style={{
-            backgroundColor: "#D87D4A",
-            borderRadius: "0px",
-            width: "100%",
+        <Link
+          onClick={() => {
+            cartIconHandler();
           }}
-          variant="contained"
-          size="large"
+          to={"checkout"}
         >
-          CHECKOUT
-        </Button>
+          <Button
+            style={{
+              backgroundColor: "#D87D4A",
+              borderRadius: "0px",
+              width: "100%",
+            }}
+            variant="contained"
+            size="large"
+          >
+            CHECKOUT
+          </Button>
+        </Link>
       </div>
     </div>
   );
