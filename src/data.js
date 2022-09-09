@@ -65,6 +65,7 @@ export const SHOP_DATA = [
     },
     others: [
       {
+        id: 3,
         slug: "xx99-mark-one-headphones",
         name: "XX99 Mark I",
         image: {
@@ -75,6 +76,7 @@ export const SHOP_DATA = [
         },
       },
       {
+        id: 2,
         slug: "xx59-headphones",
         name: "XX59",
         image: {
@@ -84,6 +86,7 @@ export const SHOP_DATA = [
         },
       },
       {
+        id: 6,
         slug: "zx9-speaker",
         name: "ZX9 Speaker",
         image: {
@@ -156,6 +159,7 @@ export const SHOP_DATA = [
     },
     others: [
       {
+        id: 4,
         slug: "xx99-mark-two-headphones",
         name: "XX99 Mark II",
         image: {
@@ -166,6 +170,7 @@ export const SHOP_DATA = [
         },
       },
       {
+        id: 3,
         slug: "xx99-mark-one-headphones",
         name: "XX99 Mark I",
         image: {
@@ -176,6 +181,7 @@ export const SHOP_DATA = [
         },
       },
       {
+        id: 6,
         slug: "zx9-speaker",
         name: "ZX9 Speaker",
         image: {
@@ -256,6 +262,7 @@ export const SHOP_DATA = [
     },
     others: [
       {
+        id: 4,
         slug: "xx99-mark-two-headphones",
         name: "XX99 Mark II",
         image: {
@@ -266,6 +273,7 @@ export const SHOP_DATA = [
         },
       },
       {
+        id: 2,
         slug: "xx59-headphones",
         name: "XX59",
         image: {
@@ -275,6 +283,7 @@ export const SHOP_DATA = [
         },
       },
       {
+        id: 6,
         slug: "zx9-speaker",
         name: "ZX9 Speaker",
         image: {
@@ -359,6 +368,7 @@ export const SHOP_DATA = [
     },
     others: [
       {
+        id: 3,
         slug: "xx99-mark-one-headphones",
         name: "XX99 Mark I",
         image: {
@@ -369,6 +379,7 @@ export const SHOP_DATA = [
         },
       },
       {
+        id: 2,
         slug: "xx59-headphones",
         name: "XX59",
         image: {
@@ -378,6 +389,7 @@ export const SHOP_DATA = [
         },
       },
       {
+        id: 6,
         slug: "zx9-speaker",
         name: "ZX9 Speaker",
         image: {
@@ -454,6 +466,7 @@ export const SHOP_DATA = [
     },
     others: [
       {
+        id: 6,
         slug: "zx9-speaker",
         name: "ZX9 Speaker",
         image: {
@@ -463,6 +476,7 @@ export const SHOP_DATA = [
         },
       },
       {
+        id: 3,
         slug: "xx99-mark-one-headphones",
         name: "XX99 Mark I",
         image: {
@@ -473,6 +487,7 @@ export const SHOP_DATA = [
         },
       },
       {
+        id: 2,
         slug: "xx59-headphones",
         name: "XX59",
         image: {
@@ -549,6 +564,7 @@ export const SHOP_DATA = [
     },
     others: [
       {
+        id: 5,
         slug: "zx7-speaker",
         name: "ZX7 Speaker",
         image: {
@@ -558,6 +574,7 @@ export const SHOP_DATA = [
         },
       },
       {
+        id: 3,
         slug: "xx99-mark-one-headphones",
         name: "XX99 Mark I",
         image: {
@@ -568,6 +585,7 @@ export const SHOP_DATA = [
         },
       },
       {
+        id: 2,
         slug: "xx59-headphones",
         name: "XX59",
         image: {

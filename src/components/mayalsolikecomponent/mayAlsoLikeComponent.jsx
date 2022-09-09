@@ -1,7 +1,8 @@
 import Button from "@mui/material/Button";
-
+import { Link } from "react-router-dom";
 function MayAlsoLikeComponent(props) {
   const { selectedproducts } = props;
+
   return (
     <div className="space-y-10">
       <h1 className="text-4xl font-bold tracking-[.3rem] text-center">
@@ -21,17 +22,19 @@ function MayAlsoLikeComponent(props) {
               <h1 className="text-3xl font-bold tracking-wider">
                 {items.name.toUpperCase()}
               </h1>
-              <Button
-                style={{
-                  backgroundColor: "#D87D4A",
-                  borderRadius: "0px",
-                  width: "65%",
-                }}
-                variant="contained"
-                size="large"
-              >
-                SEE PRODUCT
-              </Button>
+              <Link to={`${items.id}`}>
+                <Button
+                  style={{
+                    backgroundColor: "#D87D4A",
+                    borderRadius: "0px",
+                    width: "100%",
+                  }}
+                  variant="contained"
+                  size="large"
+                >
+                  SEE PRODUCT
+                </Button>
+              </Link>
             </div>
           </div>
         ))}

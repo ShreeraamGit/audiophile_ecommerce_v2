@@ -22,7 +22,12 @@ function App() {
           <Route
             path=":productId"
             element={<ProductPage products={products}></ProductPage>}
-          ></Route>
+          >
+            <Route
+              path=":productId"
+              element={<ProductPage products={products}></ProductPage>}
+            ></Route>
+          </Route>
         </Route>
         <Route
           path="earphones"
@@ -31,7 +36,12 @@ function App() {
           <Route
             path=":productId"
             element={<ProductPage products={products}></ProductPage>}
-          ></Route>
+          >
+            <Route
+              path=":productId"
+              element={<ProductPage products={products}></ProductPage>}
+            ></Route>
+          </Route>
         </Route>
         <Route
           path="headphones"
@@ -40,7 +50,12 @@ function App() {
           <Route
             path=":productId"
             element={<ProductPage products={products}></ProductPage>}
-          ></Route>
+          >
+            <Route
+              path=":productId"
+              element={<ProductPage products={products}></ProductPage>}
+            ></Route>
+          </Route>
         </Route>
       </Route>
     </Routes>
