@@ -1,9 +1,6 @@
 import Button from "@mui/material/Button";
-import { Link } from "react-router-dom";
-import AddtoCartCountIncrease from "../addToCartCountIncreaseComponent/addToCartCountIncreaseComponent";
 import { useContext } from "react";
 import { CartContext } from "../../context/cartContext";
-import { ProductContext } from "../../context/productContext";
 
 function ProductBuyingComponent(props) {
   const { addItemToCart } = useContext(CartContext);

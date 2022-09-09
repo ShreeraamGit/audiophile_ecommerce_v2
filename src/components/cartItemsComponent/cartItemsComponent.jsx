@@ -1,4 +1,3 @@
-import CategoryHeadphoneImage from "../../assets/cart/image-xx59-headphones.jpg";
 import AddtoCartCountIncrease from "../addToCartCountIncreaseComponent/addToCartCountIncreaseComponent";
 
 function CartItemsComponent(props) {
