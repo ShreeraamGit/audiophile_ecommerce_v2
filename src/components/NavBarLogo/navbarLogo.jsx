@@ -2,19 +2,19 @@ import { Link } from "react-router-dom";
 import { ReactComponent as Cart } from "../../assets/cart.svg";
 import { ReactComponent as Logo } from "../../assets/shared/desktop/logo.svg";
 import { useContext } from "react";
-import { HerosectionContext } from "../../context/heroSectionContext";
-import { ProductContext } from "../../context/productContext";
 import { CartContext } from "../../context/cartContext";
+import { SignInContext } from "../../context/signInContext";
 import CartDropDownContainer from "../cartDropDownContainer/cartDropDownContainer";
 
 function Navbarwithlogo() {
   const { currentIconState, cartIconHandler } = useContext(CartContext);
+  const { isSignedIn } = useContext(SignInContext);
   return (
     <div className="flex justify-between items-center mr-32 ml-32 nav-items border-b border-[#FBAF85] text-white ">
       <Link to="/">
         <Logo className="h-6"></Logo>
       </Link>
-      <div className="nav-link flex gap-10 font-extrabold mb-5 mt-7">
+      <div className="nav-link text-lg flex gap-4 font-extrabold">
         <Link to="/">
           <div className="">HOME</div>
         </Link>
@@ -28,11 +28,16 @@ function Navbarwithlogo() {
           <div className="">EARPHONES</div>
         </Link>
       </div>
-      <Cart
-        onClick={cartIconHandler}
-        className="h-6 w-6 mb-5 mt-7 cursor-pointer"
-      ></Cart>
-      {currentIconState && <CartDropDownContainer></CartDropDownContainer>}
+      <div className="font-extrabold underline underline-offset-4 text-lg">
+        {isSignedIn ? "Hello, Name" : "Hello sign in"}
+      </div>
+      <div className="relative w-[5rem] flex justify-center items-center">
+        <Cart
+          onClick={cartIconHandler}
+          className="h-8 w-10 mb-5 mt-7 cursor-pointer"
+        ></Cart>
+        {currentIconState && <CartDropDownContainer></CartDropDownContainer>}
+      </div>
     </div>
   );
 }
