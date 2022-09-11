@@ -5,6 +5,7 @@ import {
   signInWithPopup,
   GoogleAuthProvider,
   FacebookAuthProvider,
+  signOut,
 } from "firebase/auth";
 
 // Your web app's Firebase configuration
@@ -30,5 +31,7 @@ provider.setCustomParameters({
 
 export const auth = getAuth();
 export const signInWithGooglePopup = () => signInWithPopup(auth, provider);
-export const SignInWithFacebookPopup = () =>
+export const signInWithFacebookPopup = () =>
   signInWithPopup(auth, providerFacebook);
+
+export const signOutUserGoogle = () => signOut(auth, provider);

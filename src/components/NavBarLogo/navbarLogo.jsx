@@ -5,10 +5,11 @@ import { useContext } from "react";
 import { CartContext } from "../../context/cartContext";
 import { SignInContext } from "../../context/signInContext";
 import CartDropDownContainer from "../cartDropDownContainer/cartDropDownContainer";
+import { signOutUserGoogle } from "../../utils/firebase/firebaseUtils.js";
 
 function Navbarwithlogo() {
   const { currentIconState, cartIconHandler } = useContext(CartContext);
-  const { isSignedIn, userName, signOutHandler } = useContext(SignInContext);
+  const { isSignedIn, userName } = useContext(SignInContext);
 
   return (
     <div className="flex justify-between items-center mr-32 ml-32 nav-items border-b border-[#FBAF85] text-white ">
@@ -31,7 +32,7 @@ function Navbarwithlogo() {
       </div>
       <div className="font-bold underline underline-offset-8 text-md">
         {isSignedIn ? (
-          <span onClick={signOutHandler} className="cursor-pointer">
+          <span className="cursor-pointer">
             Hello {userName.split(" ")[0]} 👋🏻
           </span>
         ) : (

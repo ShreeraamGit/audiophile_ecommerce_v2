@@ -21,8 +21,12 @@ function Earphones(props) {
   return (
     <div className="h-fit mr-32 ml-32">
       <div className="mt-44 mb-60 h-fit flex flex-col gap-44">
-        {filteredProducts.map((items) => (
-          <ProductsPreview key={items.id} products={items}></ProductsPreview>
+        {filteredProducts.map((items, index) => (
+          <ProductsPreview
+            key={items.id}
+            index={index}
+            products={items}
+          ></ProductsPreview>
         ))}
         <Outlet></Outlet>
       </div>

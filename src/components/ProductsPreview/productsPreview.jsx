@@ -2,10 +2,14 @@ import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 
 function ProductsPreview(props) {
-  const { products } = props;
-  ///console.log(products);
+  const { products, index } = props;
+
   return (
-    <div className="flex gap-28">
+    <div
+      className={
+        (index + 1) % 2 === 0 ? "flex flex-row-reverse gap-28" : "flex gap-28"
+      }
+    >
       <div className="w-[48%] h-[30rem]">
         <img
           className="border rounded-lg h-full w-full"

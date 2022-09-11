@@ -5,7 +5,8 @@ import { SignInContext } from "../../context/signInContext";
 import { useContext } from "react";
 import {
   signInWithGooglePopup,
-  SignInWithFacebookPopup,
+  signInWithFacebookPopup,
+  SignOutUserGoogle,
 } from "../../utils/firebase/firebaseUtils.js";
 import { useNavigate } from "react-router-dom";
 
@@ -26,7 +27,7 @@ function SignIn() {
   };
 
   const logFacebookUser = async () => {
-    const response = await SignInWithFacebookPopup();
+    const response = await signInWithFacebookPopup();
     if (response) {
       setIsSignedIn(true);
       setUserName(
@@ -36,6 +37,7 @@ function SignIn() {
       nav("/");
     }
   };
+
   return (
     <div className="h-[88vh] mr-32 ml-32 flex flex-col justify-center items-center">
       <div className="flex justify-center items-center">
