@@ -3,7 +3,10 @@ import { ReactComponent as Apple } from "../../assets/apple.svg";
 import { ReactComponent as Facebook } from "../../assets/facebook.svg";
 import { SignInContext } from "../../context/signInContext";
 import { useContext } from "react";
-import { signInWithGooglePopup } from "../../utils/firebase/firebaseUtils.js";
+import {
+  signInWithGooglePopup,
+  SignInWithFacebookPopup,
+} from "../../utils/firebase/firebaseUtils.js";
 import { useNavigate } from "react-router-dom";
 
 function SignIn() {
@@ -22,6 +25,10 @@ function SignIn() {
     }
   };
 
+  const logFacebookUser = async () => {
+    const response = await SignInWithFacebookPopup();
+    console.log(response);
+  };
   return (
     <div className="h-[88vh] mr-32 ml-32 flex flex-col justify-center items-center">
       <div className="flex justify-center items-center">
@@ -39,7 +46,10 @@ function SignIn() {
           <Apple className="h-9 w-9 mr-auto"></Apple>
           <span className="mr-auto font-bold">APPLE</span>
         </button>
-        <button className="border tracking-wider cursor-pointer rounded-lg border-black p-4 h-fit w-[19rem] text-xl flex items-center">
+        <button
+          onClick={logFacebookUser}
+          className="border tracking-wider cursor-pointer rounded-lg border-black p-4 h-fit w-[19rem] text-xl flex items-center"
+        >
           <Facebook className="h-9 w-9 mr-auto"></Facebook>
           <span className="mr-auto font-bold">FACEBOOK</span>
         </button>

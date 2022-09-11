@@ -4,6 +4,7 @@ import {
   signInWithRedirect,
   signInWithPopup,
   GoogleAuthProvider,
+  FacebookAuthProvider,
 } from "firebase/auth";
 
 // Your web app's Firebase configuration
@@ -18,7 +19,10 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const firebaseApp = initializeApp(firebaseConfig);
+
+///signIN with google popup
 const provider = new GoogleAuthProvider();
+const providerFacebook = new FacebookAuthProvider();
 
 provider.setCustomParameters({
   prompt: "select_account",
@@ -26,3 +30,5 @@ provider.setCustomParameters({
 
 export const auth = getAuth();
 export const signInWithGooglePopup = () => signInWithPopup(auth, provider);
+export const SignInWithFacebookPopup = () =>
+  signInWithPopup(auth, providerFacebook);
