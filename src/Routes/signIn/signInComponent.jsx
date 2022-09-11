@@ -27,7 +27,14 @@ function SignIn() {
 
   const logFacebookUser = async () => {
     const response = await SignInWithFacebookPopup();
-    console.log(response);
+    if (response) {
+      setIsSignedIn(true);
+      setUserName(
+        response.user.displayName.charAt(0).toUpperCase() +
+          response.user.displayName.slice(1)
+      );
+      nav("/");
+    }
   };
   return (
     <div className="h-[88vh] mr-32 ml-32 flex flex-col justify-center items-center">
