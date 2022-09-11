@@ -14,7 +14,7 @@ function CartItemsComponent(props) {
           {items.name.substring(0, items.name.indexOf(" "))}
         </h1>
         <h1 className="mr-auto text-lg">
-          ${" "}
+          {" "}
           {items.price.toLocaleString("en-US", {
             style: "currency",
             currency: "EUR",
