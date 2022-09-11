@@ -41,7 +41,7 @@ function SignIn() {
       <div className="flex justify-center items-center">
         <h1 className="text-5xl">Sign In....</h1>
       </div>
-      <div className="mt-[5%] flex flex-col gap-10">
+      <div className="mt-[5%] flex flex-col gap-7">
         <button
           onClick={logGoogleUser}
           className="border tracking-wider cursor-pointer rounded-lg border-black p-4 h-fit w-[19rem] text-xl flex items-center"
