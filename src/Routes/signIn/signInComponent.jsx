@@ -3,18 +3,22 @@ import { ReactComponent as Apple } from "../../assets/apple.svg";
 import { ReactComponent as Facebook } from "../../assets/facebook.svg";
 import { SignInContext } from "../../context/signInContext";
 import { useContext } from "react";
-import { async } from "@firebase/util";
 import { signInWithGooglePopup } from "../../utils/firebase/firebaseUtils.js";
-import App from "../../App.js";
+import { useNavigate } from "react-router-dom";
 
 function SignIn() {
   const { setIsSignedIn, setUserName } = useContext(SignInContext);
+  const nav = useNavigate();
 
   const logGoogleUser = async () => {
     const response = await signInWithGooglePopup();
     if (response) {
       setIsSignedIn(true);
-      setUserName(response.user.displayName.toUpperCase());
+      setUserName(
+        response.user.displayName.charAt(0).toUpperCase() +
+          response.user.displayName.slice(1)
+      );
+      nav("/");
     }
   };
 
