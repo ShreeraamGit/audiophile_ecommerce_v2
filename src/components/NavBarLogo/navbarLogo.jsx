@@ -8,7 +8,7 @@ import CartDropDownContainer from "../cartDropDownContainer/cartDropDownContaine
 
 function Navbarwithlogo() {
   const { currentIconState, cartIconHandler } = useContext(CartContext);
-  const { isSignedIn } = useContext(SignInContext);
+  const { isSignedIn, userName } = useContext(SignInContext);
   return (
     <div className="flex justify-between items-center mr-32 ml-32 nav-items border-b border-[#FBAF85] text-white ">
       <Link to="/">
@@ -28,8 +28,14 @@ function Navbarwithlogo() {
           <div className="">EARPHONES</div>
         </Link>
       </div>
-      <div className="font-extrabold underline underline-offset-4 text-lg">
-        {isSignedIn ? "Hello, Name" : "Hello sign in"}
+      <div className="font-bold underline underline-offset-8 text-md">
+        {isSignedIn ? (
+          <span>Hello {userName}</span>
+        ) : (
+          <Link to="signin">
+            <span>Hello SignIn</span>
+          </Link>
+        )}
       </div>
       <div className="relative w-[5rem] flex justify-center items-center">
         <Cart

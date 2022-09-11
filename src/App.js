@@ -7,6 +7,7 @@ import ProductPage from "./Routes/ProductPage/productPage";
 import { Routes, Route } from "react-router-dom";
 import { ProductContext } from "./context/productContext";
 import { useContext } from "react";
+import SignIn from "./Routes/signIn/signInComponent";
 
 function App() {
   const { products } = useContext(ProductContext);
@@ -58,6 +59,7 @@ function App() {
           </Route>
         </Route>
         <Route path="checkout" element={<h1>Check out page</h1>}></Route>
+        <Route path="signin" element={<SignIn></SignIn>}></Route>
       </Route>
     </Routes>
   );

@@ -40,6 +40,8 @@ function Navigation() {
 
       case "/checkout":
         return "";
+      case "/signin":
+        return "";
       default:
         return (
           <h1 className="text-white p-20 text-4xl text-center font-extrabold">
