@@ -26,18 +26,18 @@ function SignIn() {
       <div className="mt-[5%] flex flex-col gap-10">
         <button
           onClick={logGoogleUser}
-          className="border cursor-pointer rounded-lg border-black p-4 h-fit w-[19rem] text-2xl flex items-center"
+          className="border tracking-wider cursor-pointer rounded-lg border-black p-4 h-fit w-[19rem] text-xl flex items-center"
         >
           <Goggle className="h-9 w-9 mr-auto"></Goggle>
-          <span className="mr-auto font-extrabold">GOOGLE </span>
+          <span className="mr-auto font-bold">GOOGLE </span>
         </button>
-        <button className="border cursor-pointer rounded-lg border-black p-4 h-fit w-[19rem] text-2xl flex items-center">
+        <button className="border tracking-wider  cursor-pointer rounded-lg border-black p-4 h-fit w-[19rem] text-xl flex items-center">
           <Apple className="h-9 w-9 mr-auto"></Apple>
-          <span className="mr-auto font-extrabold">APPLE</span>
+          <span className="mr-auto font-bold">APPLE</span>
         </button>
-        <button className="border cursor-pointer rounded-lg border-black p-4 h-fit w-[19rem] text-2xl flex items-center">
+        <button className="border tracking-wider cursor-pointer rounded-lg border-black p-4 h-fit w-[19rem] text-xl flex items-center">
           <Facebook className="h-9 w-9 mr-auto"></Facebook>
-          <span className="mr-auto font-extrabold">FACEBOOK</span>
+          <span className="mr-auto font-bold">FACEBOOK</span>
         </button>
       </div>
     </div>

@@ -14,7 +14,7 @@ function Navbarwithlogo() {
       <Link to="/">
         <Logo className="h-6"></Logo>
       </Link>
-      <div className="nav-link text-lg flex gap-4 font-extrabold">
+      <div className="nav-link text-lg flex gap-5 font-normal tracking-widest">
         <Link to="/">
           <div className="">HOME</div>
         </Link>
