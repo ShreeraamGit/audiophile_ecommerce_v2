@@ -12,7 +12,6 @@ function SignIn() {
 
   const logGoogleUser = async () => {
     const response = await signInWithGooglePopup();
-    console.log(response.user.displayName);
     if (response) {
       setIsSignedIn(true);
       setUserName(response.user.displayName.toUpperCase());
@@ -22,7 +21,7 @@ function SignIn() {
   return (
     <div className="h-[88vh] mr-32 ml-32 flex flex-col justify-center items-center">
       <div className="flex justify-center items-center">
-        <h1 className="text-5xl">Sign In</h1>
+        <h1 className="text-5xl">Sign In....</h1>
       </div>
       <div className="mt-[5%] flex flex-col gap-10">
         <button
