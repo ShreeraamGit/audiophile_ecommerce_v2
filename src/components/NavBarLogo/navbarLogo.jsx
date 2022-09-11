@@ -30,7 +30,7 @@ function Navbarwithlogo() {
       </div>
       <div className="font-bold underline underline-offset-8 text-md">
         {isSignedIn ? (
-          <span>Hello {userName.split(" ")[0]} 👋🏻</span>
+          <span className="">Hello {userName.split(" ")[0]} 👋🏻</span>
         ) : (
           <Link to="signin">
             <span>Hello SignIn</span>
