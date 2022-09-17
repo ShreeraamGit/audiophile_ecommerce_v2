@@ -47,7 +47,7 @@ function Navbarwithlogo() {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </div>
-            <ul className="flex text-white flex-col items-center justify-between gap-20 underline underline-offset-8">
+            <ul className="flex tracking-[0.6rem] text-white flex-col items-center justify-between gap-20 underline underline-offset-8">
               <Link onClick={() => setIsNavOpen(false)} to="/headphones">
                 <div className="">HEADPHONES</div>
               </Link>
@@ -63,7 +63,7 @@ function Navbarwithlogo() {
                 </span>
               ) : (
                 <Link onClick={() => setIsNavOpen(false)} to="signin">
-                  <span>Hello SignIn</span>
+                  <span>Hello SIGN-IN</span>
                 </Link>
               )}
             </ul>
