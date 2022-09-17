@@ -1,8 +1,8 @@
 function Gallery(props) {
   const { selectedproducts } = props;
   return (
-    <div className="mt-36 mb-36 flex gap-7 h-fit">
-      <div className="flex flex-col w-[65%] h-full gap-7">
+    <div className="mt-28 mb-28 flex flex-col gap-7 h-fit">
+      <div className="flex flex-col w-full h-full gap-7">
         <div className="border">
           <img
             className="rounded-lg w-full"

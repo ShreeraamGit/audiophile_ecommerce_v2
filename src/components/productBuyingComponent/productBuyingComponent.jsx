@@ -10,15 +10,15 @@ function ProductBuyingComponent(props) {
   const addProductToCart = () => addItemToCart(selectedproducts);
 
   return (
-    <div className="flex gap-28">
-      <div className="w-[48%] h-[30rem]">
+    <div className="flex flex-col gap-20">
+      <div className="w-full h-[27rem]">
         <img
           className="border rounded-lg h-full w-full"
           src={selectedproducts.image.desktop}
           alt="HeroImage"
         />
       </div>
-      <div className="w-1/2">
+      <div className="w-full">
         <div className="w-full h-full flex flex-col gap-7 justify-center">
           {selectedproducts.new ? (
             <h4 className="tracking-[0.8rem] text-[#D87D4A]">NEW PRODUCT</h4>

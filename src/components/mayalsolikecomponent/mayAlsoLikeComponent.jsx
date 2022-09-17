@@ -5,15 +5,15 @@ function MayAlsoLikeComponent(props) {
 
   return (
     <div className="space-y-10">
-      <h1 className="text-4xl font-bold tracking-[.3rem] text-center">
+      <h1 className="text-3xl font-bold tracking-[.3rem] text-center">
         YOU MAY ALSO LIKE
       </h1>
-      <div className="flex justify-between gap-10">
+      <div className="flex flex-col justify-between gap-10">
         {selectedproducts.others.map((items) => (
           <div key={items.name} className=" flex flex-col gap-10">
             <div className="">
               <img
-                className="border rounded-xl h-full w-full"
+                className="border rounded-xl h-[18rem] w-full"
                 src={items.image.desktop}
                 alt="HeroImage"
               />

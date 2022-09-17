@@ -1,14 +1,14 @@
 function ProductDescription(props) {
   const { selectedproducts } = props;
   return (
-    <div className="mt-36 flex gap-20">
-      <div className="w-[80%] mr-auto space-y-7">
+    <div className="mt-28 flex flex-col gap-20">
+      <div className="w-full mr-auto space-y-7">
         <h1 className="text-4xl font-semibold tracking-wide">FEATURES</h1>
-        <p className="tracking-wide text-justify">
+        <p className="tracking-widest leading-7 text-justify">
           {selectedproducts.features}
         </p>
       </div>
-      <div className="w-[40%] space-y-6">
+      <div className="w-full space-y-6">
         <h1 className="text-4xl font-semibold tracking-wide">IN THE BOX</h1>
         {selectedproducts.includes.map((items) => (
           <div key={items.item} className="flex gap-10">
