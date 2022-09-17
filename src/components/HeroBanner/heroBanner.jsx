@@ -41,7 +41,7 @@ function HeroBanner() {
     <div className="relative w-screen h-fit">
       <div className="">
         <RenderHeroImage></RenderHeroImage>
-        <div className="w-full gap-7 flex flex-col justify-center items-center absolute top-1/2 left-1/2 text-white transform -translate-x-1/2 -translate-y-1/2">
+        <div className="p-6 w-full gap-5 flex flex-col justify-center items-center absolute top-1/2 left-1/2 text-white transform -translate-x-1/2 -translate-y-1/2">
           <h5 className="tracking-[1rem] text-xl">NEW PRODUCT</h5>
           <h1 className="text-5xl font-extrabold tracking-wider text-center">
             XX99 MARK II HEADPHONES
