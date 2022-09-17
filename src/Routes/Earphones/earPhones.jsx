@@ -19,7 +19,7 @@ function Earphones(props) {
   );
 
   return (
-    <div className="h-fit mr-32 ml-32">
+    <div className="h-fit pr-5 pl-5">
       <div className="mt-44 mb-60 h-fit flex flex-col gap-44">
         {filteredProducts.map((items, index) => (
           <ProductsPreview

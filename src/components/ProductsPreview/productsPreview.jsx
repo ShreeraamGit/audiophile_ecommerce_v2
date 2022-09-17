@@ -5,19 +5,15 @@ function ProductsPreview(props) {
   const { products, index } = props;
 
   return (
-    <div
-      className={
-        (index + 1) % 2 === 0 ? "flex flex-row-reverse gap-28" : "flex gap-28"
-      }
-    >
-      <div className="w-[48%] h-[30rem]">
+    <div className="flex flex-col justify-center items-center">
+      <div className="w-full h-[24rem] mb-14">
         <img
           className="border rounded-lg h-full w-full"
           src={products.image.desktop}
           alt="HeroImage"
         />
       </div>
-      <div className="w-1/2">
+      <div className="w-full text-center">
         <div className="w-full h-full flex flex-col gap-7 justify-center">
           {products.new ? (
             <h4 className="tracking-[0.8rem] text-[#D87D4A]">NEW PRODUCT</h4>
@@ -33,7 +29,8 @@ function ProductsPreview(props) {
               style={{
                 backgroundColor: "#D87D4A",
                 borderRadius: "0px",
-                width: "36%",
+                width: "50%",
+                padding: "0.9rem",
               }}
               variant="contained"
               size="large"

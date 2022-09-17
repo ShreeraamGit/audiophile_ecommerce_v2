@@ -23,13 +23,13 @@ function Footer() {
             <div className="">EARPHONES</div>
           </Link>
           <div className="flex p-4 flex-col gap-10 justify-center items-center">
-            <p className="tracking-wider text-center">
+            <p className="tracking-wider text-center font-light">
               Audiophile is an all in one stop to fulfil your audio needs. We're
               a small team of music lovers and sound specialists who are devoted
               to helping you get the most out of personal audio. Come and visit
               our demo facility - we're open 7 days a week.
             </p>
-            <h3 className="text-center">
+            <h3 className="text-center font-light">
               Copyright ® 2022. All Rights Reserved{" "}
             </h3>
           </div>
