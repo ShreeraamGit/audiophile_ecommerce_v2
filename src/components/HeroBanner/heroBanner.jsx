@@ -1,31 +1,46 @@
 import HomeHeroImage from "../../assets/home/desktop/image-hero.jpg";
+import HomeHeroImageMobile from "../../assets/home/mobile/image-header.jpg";
+import HomeHeroImageTablet from "../../assets/home/tablet/image-header.jpg";
 import Button from "@mui/material/Button";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { WindowSizeContext } from "../../context/windowSizeContext";
+import { useContext, useEffect } from "react";
 
 function HeroBanner() {
+  const { useWindowSize, updateSize } = useContext(WindowSizeContext);
+  const [width, height] = useWindowSize();
+
+  const RenderHeroImage = () => {
+    if (width < 640) {
+      return (
+        <img
+          className="h-full w-full"
+          src={HomeHeroImageMobile}
+          alt="HeroImage"
+        />
+      );
+    } else if (width < 768) {
+      return (
+        <img
+          className="h-full w-full"
+          src={HomeHeroImageTablet}
+          alt="HeroImage"
+        />
+      );
+    } else if (width < 1024) {
+      return (
+        <img className="h-full w-full" src={HomeHeroImage} alt="HeroImage" />
+      );
+    }
+    return (
+      <img className="h-full w-full" src={HomeHeroImage} alt="HeroImage" />
+    );
+  };
+
   return (
-    <div className="relative">
-      <img className="h-full w-full" src={HomeHeroImage} alt="HeroImage" />;
-      <div className="absolute space-y-5 text-white bottom-1/4 mr-32 ml-32 w-[27rem]">
-        <h3 className="tracking-[.8rem] text-[#F1F1F1]">NEW PRODUCT</h3>
-        <h1 className="text-6xl tracking-[.2rem] font-extrabold">
-          XX99 MARK II HEADPHONES
-        </h1>
-        <p className="text-[#F1F1F1] text-lg tracking-[.05rem]">
-          Expreience natural, lifelike audio and exceptional build quality made
-          fir the passionate enthusiast
-        </p>
-        <Button
-          style={{
-            backgroundColor: "#D87D4A",
-            borderRadius: "0px",
-            width: "40%",
-          }}
-          variant="contained"
-          size="large"
-        >
-          SEE PRODUCT
-        </Button>
+    <div className="relative w-screen h-fit">
+      <div className="">
+        <RenderHeroImage></RenderHeroImage>
       </div>
     </div>
   );

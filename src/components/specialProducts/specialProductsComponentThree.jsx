@@ -3,15 +3,15 @@ import { Button } from "@mui/material";
 
 function SpecialProductsDisplayThree() {
   return (
-    <div className="mb-40 h-[19rem] flex gap-10">
-      <div className="h-full w-1/2">
+    <div className="h-[19rem] flex flex-col justify-center items-center gap-6">
+      <div className="h-full w-full">
         <img
           className="h-full w-full border rounded-xl"
           src={SpecialProductEarphoneImage}
           alt="HeroImage"
         />
       </div>
-      <div className="h-full w-1/2 border rounded-lg bg-[#F1F1F1] flex flex-col justify-center items-center">
+      <div className="h-full w-full pt-10 pb-10 border rounded-lg bg-[#F1F1F1] flex flex-col justify-center items-center">
         <div className="flex flex-col gap-5">
           <h1 className="text-3xl font-bold tracking-[0.27rem]">
             YX1 EARPHONES

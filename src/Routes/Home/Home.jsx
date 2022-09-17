@@ -6,12 +6,13 @@ import About from "../../components/About/About";
 
 function Home() {
   return (
-    <div className="h-fit mr-32 ml-32">
+    <div className="h-fit mr-5 ml-5 xl:mr-32 xl:ml-32">
       <CategoryDisplay></CategoryDisplay>
-      <SpecialProductsDisplayOne></SpecialProductsDisplayOne>
-      <SpecialProductsDisplayTwo></SpecialProductsDisplayTwo>
-      <SpecialProductsDisplayThree></SpecialProductsDisplayThree>
-      <About></About>
+      <div className="flex flex-col gap-8 mb-40 h-full">
+        <SpecialProductsDisplayOne></SpecialProductsDisplayOne>
+        <SpecialProductsDisplayTwo></SpecialProductsDisplayTwo>
+        <SpecialProductsDisplayThree></SpecialProductsDisplayThree>
+      </div>
     </div>
   );
 }

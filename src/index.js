@@ -9,21 +9,24 @@ import { HerosectionProvider } from "./context/heroSectionContext.jsx";
 import { CartProvider } from "./context/cartContext";
 import { SignInProvider } from "./context/signInContext";
 import ScrollToTop from "./components/scrollToTop/scrollToTop.jsx";
+import { WindowSizeProvider } from "./context/windowSizeContext.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <ScrollToTop />
-      <ProductsProvider>
-        <HerosectionProvider>
-          <CartProvider>
-            <SignInProvider>
-              <App />
-            </SignInProvider>
-          </CartProvider>
-        </HerosectionProvider>
-      </ProductsProvider>
+      <WindowSizeProvider>
+        <ProductsProvider>
+          <HerosectionProvider>
+            <CartProvider>
+              <SignInProvider>
+                <App />
+              </SignInProvider>
+            </CartProvider>
+          </HerosectionProvider>
+        </ProductsProvider>
+      </WindowSizeProvider>
     </BrowserRouter>
   </React.StrictMode>
 );
