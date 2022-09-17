@@ -54,9 +54,11 @@ function Navigation() {
   return (
     <Fragment>
       <div className="nav-bar xl:h-fit w-full h-fit bg-[#191919]">
+        <Navbarwithlogo></Navbarwithlogo>
         {renderSwitch(pageStatus)}
       </div>
       <Outlet></Outlet>
+      <Footer></Footer>
     </Fragment>
   );
 }

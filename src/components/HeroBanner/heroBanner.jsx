@@ -41,6 +41,26 @@ function HeroBanner() {
     <div className="relative w-screen h-fit">
       <div className="">
         <RenderHeroImage></RenderHeroImage>
+        <div className="w-full gap-7 flex flex-col justify-center items-center absolute top-1/2 left-1/2 text-white transform -translate-x-1/2 -translate-y-1/2">
+          <h5 className="tracking-[1rem] text-xl">NEW PRODUCT</h5>
+          <h1 className="text-5xl font-extrabold tracking-wider text-center">
+            XX99 MARK II HEADPHONES
+          </h1>
+          <p className="text-center leading-8 text-lg font-light tracking-widest">
+            Experence natural, lifelike audio and exceptional build quality made
+            for the passionate music enthusiast
+          </p>
+          <Button
+            style={{
+              backgroundColor: "#D87D4A",
+              borderRadius: "0px",
+            }}
+            variant="contained"
+            size="large"
+          >
+            SEE PRODUCT
+          </Button>
+        </div>
       </div>
     </div>
   );

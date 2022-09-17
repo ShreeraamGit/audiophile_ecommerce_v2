@@ -6,19 +6,10 @@ import { ReactComponent as TwitterLogo } from "../../assets/shared/desktop/icon-
 
 function Footer() {
   return (
-    <div className="h-[25rem] gap-32 bg-[#101010] text-white flex">
-      <div className="ml-32 w-1/2 flex flex-col space-y-10 justify-center">
+    <div className="h-fit bg-[#101010] text-white flex justify-center">
+      <div className="flex flex-col gap-14 items-center mt-16">
         <Logo></Logo>
-        <p className="tracking-wider">
-          Audiophile is an all in one stop to fulfil your audio needs. We're a
-          small team of music lovers and sound specialists who are devoted to
-          helping you get the most out of personal audio. Come and visit our
-          demo facility - we're open 7 days a week.
-        </p>
-        <h3>Copyright ® 2022. All Rights Reserved </h3>
-      </div>
-      <div className="mr-32 w-1/2 flex flex-col justify-center space-y-48">
-        <div className="flex gap-5 justify-end font-bold tracking-widest">
+        <div className="flex flex-col justify-center items-center gap-10 justify-end font-bold tracking-widest">
           <Link to="/">
             <div className="">HOME</div>
           </Link>
@@ -31,8 +22,19 @@ function Footer() {
           <Link to="/earphones">
             <div className="">EARPHONES</div>
           </Link>
+          <div className="flex p-4 flex-col gap-10 justify-center items-center">
+            <p className="tracking-wider text-center">
+              Audiophile is an all in one stop to fulfil your audio needs. We're
+              a small team of music lovers and sound specialists who are devoted
+              to helping you get the most out of personal audio. Come and visit
+              our demo facility - we're open 7 days a week.
+            </p>
+            <h3 className="text-center">
+              Copyright ® 2022. All Rights Reserved{" "}
+            </h3>
+          </div>
         </div>
-        <div className="flex justify-end gap-5">
+        <div className="flex justify-end gap-5 mb-16">
           <FacebookLogo className=""></FacebookLogo>
           <TwitterLogo></TwitterLogo>
           <InstagramLogo></InstagramLogo>

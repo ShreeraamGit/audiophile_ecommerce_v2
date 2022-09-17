@@ -13,6 +13,7 @@ function Home() {
         <SpecialProductsDisplayTwo></SpecialProductsDisplayTwo>
         <SpecialProductsDisplayThree></SpecialProductsDisplayThree>
       </div>
+      <About></About>
     </div>
   );
 }
