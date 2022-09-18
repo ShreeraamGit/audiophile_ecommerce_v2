@@ -98,9 +98,6 @@ function Navbarwithlogo() {
           )}
         </div>
         <div className="h-14 relative flex justify-center items-center">
-          <span className="absolute top-0 left-1/2 transform -translate-x-1/3 -translate-y-1/2 border text-sm p-[0.1rem] text-black rounded-full bg-white">
-            {cartItems.length}
-          </span>
           <Cart
             onClick={cartIconHandler}
             className="h-8 w-8 cursor-pointer"
