@@ -36,21 +36,21 @@ function About() {
     return (
       <img
         className="h-full w-full rounded-xl"
-        src={AboutImageTablet}
+        src={AboutImage}
         alt="HeroImage"
       />
     );
   };
 
   return (
-    <div className="flex flex-col-reverse gap-10 mb-32 justify-center items-center">
+    <div className="flex flex-col-reverse xl:flex-row gap-10 mb-32 justify-center items-center">
       <div className="w-full">
         <div className="w-full text-center space-y-5 flex flex-col justify-center items-center">
-          <h1 className="text-[2.1rem] font-bold tracking-wide">
+          <h1 className="text-[2.1rem] font-bold tracking-wide xl:text-left">
             BRINGING YOU THE <span className="text-[#D87D4A]">BEST</span> AUDIO
             GEAR
           </h1>
-          <p className="text-[#101010] tracking-wide">
+          <p className="text-[#101010] tracking-wide xl:text-left">
             Located at the heart of New York City, Audiophile is the premier
             store for high end headphones, earphones, speakers an audio
             accessories.We have a large showroom and luxury demonstration rooms
@@ -60,7 +60,7 @@ function About() {
           </p>
         </div>
       </div>
-      <div className="w-full md:w-full border">
+      <div className="w-full md:w-full">
         <RenderAboutImage></RenderAboutImage>
       </div>
     </div>

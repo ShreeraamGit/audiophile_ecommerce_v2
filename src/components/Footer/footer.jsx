@@ -7,9 +7,9 @@ import { ReactComponent as TwitterLogo } from "../../assets/shared/desktop/icon-
 function Footer() {
   return (
     <div className="h-fit bg-[#101010] text-white flex justify-center">
-      <div className="flex flex-col gap-14 items-center mt-16">
-        <Logo></Logo>
-        <div className="flex flex-col justify-center items-center gap-10 justify-end font-bold tracking-widest">
+      <div className="xl:mr-32 xl:ml-32 flex flex-col gap-14 items-center mt-16">
+        <Logo className="xl:mr-auto"></Logo>
+        <div className="flex flex-col xl:flex-row-reverse xl:justify-start xl:items-start justify-center items-center gap-10 xl:gap-6 justify-end font-bold tracking-widest">
           <Link to="/">
             <div className="">HOME</div>
           </Link>
@@ -22,8 +22,8 @@ function Footer() {
           <Link to="/earphones">
             <div className="">EARPHONES</div>
           </Link>
-          <div className="flex p-4 flex-col gap-10 justify-center items-center">
-            <p className="tracking-wider text-center font-light">
+          <div className="flex xl:text-left p-4 xl:p-0 flex-col gap-10 xl:justify-start xl:items-start xl:text-left justify-center items-center">
+            <p className="tracking-wider text-center font-light xl:text-left">
               Audiophile is an all in one stop to fulfil your audio needs. We're
               a small team of music lovers and sound specialists who are devoted
               to helping you get the most out of personal audio. Come and visit
@@ -34,7 +34,7 @@ function Footer() {
             </h3>
           </div>
         </div>
-        <div className="flex justify-end gap-5 mb-16">
+        <div className="flex xl:ml-auto justify-end gap-5 xl:gap-10 mb-16">
           <FacebookLogo className=""></FacebookLogo>
           <TwitterLogo></TwitterLogo>
           <InstagramLogo></InstagramLogo>

@@ -36,13 +36,17 @@ function SpecialProductsDisplayTwo() {
       );
     }
     return (
-      <img className="h-full w-full" src={SpeakerImageMobile} alt="HeroImage" />
+      <img
+        className="h-full w-full"
+        src={SpeakerImageDesktop}
+        alt="HeroImage"
+      />
     );
   };
   return (
-    <div className="border relative rounded-xl h-[18rem] mb-12 md:mb-0 bg-[#F1F1F1]">
+    <div className="border z-50 relative rounded-xl h-[18rem] mb-12 md:mb-0 bg-[#F1F1F1]">
       <RenderSpeakerImage></RenderSpeakerImage>
-      <div className="absolute top-[29%] left-[4%] flex flex-col gap-5">
+      <div className="absolute top-[29%] left-[4%] xl:top-[33%] xl:left-[8%]  flex flex-col gap-5">
         <h1 className="text-3xl font-bold tracking-[0.20rem]">ZX7 SPEAKER</h1>
         <Button
           style={{

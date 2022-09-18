@@ -18,7 +18,7 @@ function Navbarwithlogo() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <div className="pt-7 pr-5 pl-5 md:pr-12 md:pl-12 border-b border-[#D87D4A]">
+    <div className="xl:mr-32 xl:ml-32 pt-7 xl:pr-0 xl:pl-0 pr-5 pl-5 md:pr-12 md:pl-12 border-b border-[#D87D4A]">
       <nav className="flex justify-between items-center mb-5">
         <section className="MOBILE-MENU flex lg:hidden">
           <div
@@ -75,8 +75,28 @@ function Navbarwithlogo() {
             <Logo className="h-6"></Logo>
           </Link>
         </div>
+        <div className="text-white lg:flex lg:flex-row gap-10 hidden font-extrabold underline underline-offset-4">
+          <Link onClick={() => setIsNavOpen(false)} to="/headphones">
+            <div className="">HEADPHONES</div>
+          </Link>
+          <Link onClick={() => setIsNavOpen(false)} to="/speakers">
+            <div className="">SPEAKERS</div>
+          </Link>
+          <Link onClick={() => setIsNavOpen(false)} to="/earphones">
+            <div className="">EARPHONES</div>
+          </Link>
+          {isSignedIn ? (
+            <span className="cursor-pointer">
+              Hello {userName.split(" ")[0]} 👋🏻
+            </span>
+          ) : (
+            <Link onClick={() => setIsNavOpen(false)} to="signin">
+              <span className="text-[#D87D4A]">Hello SIGN-IN</span>
+            </Link>
+          )}
+        </div>
         <div className="h-14 relative flex justify-center items-center">
-          <span className="absolute top-0 left-1/2 transform -translate-x-1/3 -translate-y-1/2 border text-sm p-1 text-black rounded-full bg-white">
+          <span className="absolute top-0 left-1/2 transform -translate-x-1/3 -translate-y-1/2 border text-sm p-[0.1rem] text-black rounded-full bg-white">
             {cartItems.length}
           </span>
           <Cart
