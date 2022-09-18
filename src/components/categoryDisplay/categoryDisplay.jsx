@@ -11,7 +11,7 @@ function CategoryDisplay() {
       <h1 className="text-center underline underline-offset-8 mt-20 text-2xl text-[#D87D4A] font-extrabold">
         OUR CATEGORIES
       </h1>
-      <div className="mt-28 mb-28 md:mb-44 flex md:flex-row xl:flex-row flex-col justify-between gap-28 md:gap-4 xl:justify-between xl:gap-8">
+      <div className="mt-28 mb-28 md:mb-44 xl:mb-32 flex md:flex-row xl:flex-row flex-col justify-between gap-28 md:gap-4 xl:justify-between xl:gap-8">
         <div className="categorybox relative bg-[#F1F1F1] rounded-lg w-full h-[15rem] flex flex-col justify-center items-center">
           <img
             className="absolute top-0 left-1/5 translate-y-[-4rem] h-[15rem] w-[15rem]"
