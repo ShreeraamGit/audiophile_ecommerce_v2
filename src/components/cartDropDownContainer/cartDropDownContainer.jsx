@@ -9,7 +9,7 @@ function CartDropDownContainer() {
     useContext(CartContext);
 
   return (
-    <div className="xl:pr-10 xl:pl-10 pr-4 pl-4 z-50 text-[#101010] bg-[#FFFFFF] rounded-lg absolute top-[220%] right-[0] h-fit w-[41vh]">
+    <div className="xl:pr-10 xl:pl-10 pr-4 pl-4 z-50 text-[#101010] bg-[#FFFFFF] rounded-lg absolute top-[220%] right-[0] h-fit w-[41vh] xl:w-[60vh]">
       <div className="flex justify-between mt-10">
         <h1 className="text-xl font-bold">CART ({cartItems.length})</h1>
         <button

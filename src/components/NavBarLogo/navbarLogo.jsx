@@ -64,7 +64,9 @@ function Navbarwithlogo() {
                 </span>
               ) : (
                 <Link onClick={() => setIsNavOpen(false)} to="signin">
-                  <span className="text-[#D87D4A]">Hello SIGN-IN</span>
+                  <span className="text-[#D87D4A] font-extrabold">
+                    Hello SIGN-IN
+                  </span>
                 </Link>
               )}
             </ul>

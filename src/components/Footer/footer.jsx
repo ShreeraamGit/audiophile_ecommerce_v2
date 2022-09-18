@@ -9,7 +9,7 @@ function Footer() {
     <div className="h-fit bg-[#101010] text-white flex justify-center">
       <div className="xl:mr-32 xl:ml-32 flex flex-col gap-14 items-center mt-16">
         <Logo className="xl:mr-auto"></Logo>
-        <div className="flex flex-col xl:flex-row-reverse xl:justify-start xl:items-start justify-center items-center gap-10 xl:gap-6 justify-end font-bold tracking-widest">
+        <div className="flex flex-col xl:flex-row-reverse xl:justify-start xl:items-start justify-center items-center gap-10 xl:gap-10 justify-end font-bold tracking-widest">
           <Link to="/">
             <div
               onClick={() => {

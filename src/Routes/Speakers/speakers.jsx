@@ -22,7 +22,7 @@ function Speaker(props) {
 
   return (
     <div className="h-fit pr-5 pl-5 xl:mr-32 xl:ml-32">
-      <div className="mt-44 mb-60 h-fit flex flex-col gap-44">
+      <div className="mt-44 mb-60 xl:mt-44 xl:mb-44 h-fit flex flex-col gap-44">
         {filteredProducts.map((items, index) => (
           <ProductsPreview
             key={items.id}
