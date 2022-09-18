@@ -30,7 +30,7 @@ function SpecialProductsDisplayTwo() {
       return (
         <img
           className="h-full w-full rounded-xl"
-          src={SpeakerImageDesktop}
+          src={SpeakerImageTablet}
           alt="HeroImage"
         />
       );
@@ -40,7 +40,7 @@ function SpecialProductsDisplayTwo() {
     );
   };
   return (
-    <div className="border relative rounded-xl h-[18rem] mb-12 bg-[#F1F1F1]">
+    <div className="border relative rounded-xl h-[18rem] mb-12 md:mb-0 bg-[#F1F1F1]">
       <RenderSpeakerImage></RenderSpeakerImage>
       <div className="absolute top-[29%] left-[4%] flex flex-col gap-5">
         <h1 className="text-3xl font-bold tracking-[0.20rem]">ZX7 SPEAKER</h1>

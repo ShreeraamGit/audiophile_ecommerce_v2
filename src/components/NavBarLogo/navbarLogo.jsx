@@ -47,7 +47,7 @@ function Navbarwithlogo() {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </div>
-            <ul className="flex tracking-[0.6rem] text-white flex-col items-center justify-between gap-20 underline underline-offset-8">
+            <ul className="flex tracking-[0.6rem] text-white flex-col items-center justify-between gap-20 underline underline-offset-8 md:text-2xl">
               <Link onClick={() => setIsNavOpen(false)} to="/headphones">
                 <div className="">HEADPHONES</div>
               </Link>
@@ -63,7 +63,7 @@ function Navbarwithlogo() {
                 </span>
               ) : (
                 <Link onClick={() => setIsNavOpen(false)} to="signin">
-                  <span>Hello SIGN-IN</span>
+                  <span className="text-[#D87D4A]">Hello SIGN-IN</span>
                 </Link>
               )}
             </ul>
@@ -88,12 +88,12 @@ function Navbarwithlogo() {
       }
       .showMenuNav {
         display: block;
-        position: absolute;
+        position: fixed;
         width: 100%;
         height: 100vh;
         top: 0;
         left: 0;
-        z-index: 10;
+        z-index: 100;
         display: flex;
         flex-direction: column;
         justify-content: center;

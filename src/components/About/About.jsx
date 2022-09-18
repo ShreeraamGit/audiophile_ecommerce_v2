@@ -1,6 +1,47 @@
 import AboutImage from "../../assets/shared/desktop/image-best-gear.jpg";
+import AboutImageTablet from "../../assets/shared/tablet/image-best-gear.jpg";
+import { WindowSizeContext } from "../../context/windowSizeContext";
+import { useContext, useEffect } from "react";
 
 function About() {
+  const RenderAboutImage = () => {
+    const { useWindowSize, updateSize } = useContext(WindowSizeContext);
+    const [width, height] = useWindowSize();
+
+    if (width < 640) {
+      return (
+        <img
+          className="h-full w-full rounded-xl"
+          src={AboutImage}
+          alt="HeroImage"
+        />
+      );
+    } else if (width < 768) {
+      return (
+        <img
+          className="h-full w-full rounded-xl"
+          src={AboutImageTablet}
+          alt="HeroImage"
+        />
+      );
+    } else if (width < 1024) {
+      return (
+        <img
+          className="h-full w-full rounded-xl"
+          src={AboutImageTablet}
+          alt="HeroImage"
+        />
+      );
+    }
+    return (
+      <img
+        className="h-full w-full rounded-xl"
+        src={AboutImageTablet}
+        alt="HeroImage"
+      />
+    );
+  };
+
   return (
     <div className="flex flex-col-reverse gap-10 mb-32 justify-center items-center">
       <div className="w-full">
@@ -19,8 +60,8 @@ function About() {
           </p>
         </div>
       </div>
-      <div className="w-full">
-        <img className="rounded-xl" src={AboutImage} alt="HeroImage" />
+      <div className="w-full md:w-full border">
+        <RenderAboutImage></RenderAboutImage>
       </div>
     </div>
   );

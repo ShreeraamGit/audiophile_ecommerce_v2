@@ -3,7 +3,7 @@ import { Button } from "@mui/material";
 
 function SpecialProductsDisplayThree() {
   return (
-    <div className="h-[19rem] flex flex-col justify-center items-center gap-6">
+    <div className="h-[19rem] flex flex-col md:flex-row justify-center items-center gap-6">
       <div className="h-full w-full">
         <img
           className="h-full w-full border rounded-xl"
