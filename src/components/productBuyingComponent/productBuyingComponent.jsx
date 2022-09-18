@@ -11,7 +11,7 @@ function ProductBuyingComponent(props) {
 
   return (
     <div className="flex flex-col gap-20">
-      <div className="w-full h-[27rem]">
+      <div className="w-full h-[25rem]">
         <img
           className="border rounded-lg h-full w-full"
           src={selectedproducts.image.desktop}

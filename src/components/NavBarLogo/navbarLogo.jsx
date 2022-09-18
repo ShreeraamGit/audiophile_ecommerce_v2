@@ -11,7 +11,8 @@ import { ReactComponent as MenuIcon } from "../../assets/menu.svg";
 import { useState } from "react";
 
 function Navbarwithlogo() {
-  const { currentIconState, cartIconHandler } = useContext(CartContext);
+  const { currentIconState, cartIconHandler, cartItems } =
+    useContext(CartContext);
   const { isSignedIn, userName } = useContext(SignInContext);
 
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -74,7 +75,10 @@ function Navbarwithlogo() {
             <Logo className="h-6"></Logo>
           </Link>
         </div>
-        <div className="relative flex justify-center items-center">
+        <div className="h-14 relative flex justify-center items-center">
+          <span className="absolute top-0 left-1/2 transform -translate-x-1/3 -translate-y-1/2 border text-sm p-1 text-black rounded-full bg-white">
+            {cartItems.length}
+          </span>
           <Cart
             onClick={cartIconHandler}
             className="h-8 w-8 cursor-pointer"
