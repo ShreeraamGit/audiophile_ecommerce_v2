@@ -11,16 +11,44 @@ function Footer() {
         <Logo className="xl:mr-auto"></Logo>
         <div className="flex flex-col xl:flex-row-reverse xl:justify-start xl:items-start justify-center items-center gap-10 xl:gap-6 justify-end font-bold tracking-widest">
           <Link to="/">
-            <div className="">HOME</div>
+            <div
+              onClick={() => {
+                window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              }}
+              className=""
+            >
+              HOME
+            </div>
           </Link>
           <Link to="/headphones">
-            <div className="">HEADPHONES</div>
+            <div
+              onClick={() => {
+                window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              }}
+              className=""
+            >
+              HEADPHONES
+            </div>
           </Link>
           <Link to="/speakers">
-            <div className="">SPEAKERS</div>
+            <div
+              onClick={() => {
+                window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              }}
+              className=""
+            >
+              SPEAKERS
+            </div>
           </Link>
           <Link to="/earphones">
-            <div className="">EARPHONES</div>
+            <div
+              onClick={() => {
+                window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              }}
+              className=""
+            >
+              EARPHONES
+            </div>
           </Link>
           <div className="flex xl:text-left p-4 xl:p-0 flex-col gap-10 xl:justify-start xl:items-start xl:text-left justify-center items-center">
             <p className="tracking-wider text-center font-light xl:text-left">
