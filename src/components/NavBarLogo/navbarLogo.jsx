@@ -17,7 +17,7 @@ function Navbarwithlogo() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <div className="pt-7 pr-5 pl-5 border-b border-[#D87D4A]">
+    <div className="pt-7 pr-5 pl-5 md:pr-12 md:pl-12 border-b border-[#D87D4A]">
       <nav className="flex justify-between items-center mb-5">
         <section className="MOBILE-MENU flex lg:hidden">
           <div

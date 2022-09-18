@@ -9,14 +9,14 @@ function CartDropDownContainer() {
     useContext(CartContext);
 
   return (
-    <div className="pr-10 pl-10 z-50 text-[#101010] bg-[#FFFFFF] rounded-lg absolute top-[140%] right-[0] h-fit w-screen">
+    <div className="xl:pr-10 xl:pl-10 pr-4 pl-4 z-50 text-[#101010] bg-[#FFFFFF] rounded-lg absolute top-[220%] right-[0] h-fit w-[41vh]">
       <div className="flex justify-between mt-10">
-        <h1 className="text-2xl font-bold">CART ({cartItems.length})</h1>
+        <h1 className="text-xl font-bold">CART ({cartItems.length})</h1>
         <button
           onClick={() => {
             removeItemsFromCart();
           }}
-          className="text-xl tracking-wide underline decoration-solid underline-offset-4 text-[#101010]"
+          className="text-lg tracking-wide underline decoration-solid underline-offset-4 text-[#101010]"
         >
           <span>Remove all</span>
         </button>
@@ -24,7 +24,7 @@ function CartDropDownContainer() {
       <div className="mt-10 flex flex-col gap-7">
         {cartItems.length === 0 && (
           <div className="flex justify-center items-center">
-            <h2 className="text-2xl font-bold">
+            <h2 className="text-xl font-bold">
               OOPS YOUR CART IS EMPTY <span className="text-2xl">😳</span>{" "}
             </h2>
           </div>
