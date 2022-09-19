@@ -42,7 +42,7 @@ function HeroBanner() {
   };
 
   return (
-    <div className="relative w-screen h-screen bg-[#191919]">
+    <div className="relative w-screen h-[90vh] bg-[#191919]">
       <div className="">
         {RenderHeroImage()}
         <div className="xl:w-[45%] p-6 md:w-[90%] w-[95%] gap-5 xl:gap-7 md:gap-10 flex flex-col justify-center items-center absolute top-1/2 left-1/2 lg:left-[32%] text-white transform -translate-x-1/2 -translate-y-1/2">

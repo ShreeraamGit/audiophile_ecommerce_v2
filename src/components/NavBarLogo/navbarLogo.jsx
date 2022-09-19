@@ -13,7 +13,7 @@ import { useState } from "react";
 function Navbarwithlogo() {
   const { currentIconState, cartIconHandler, cartItems } =
     useContext(CartContext);
-  const { isSignedIn, userName } = useContext(SignInContext);
+  const { isSignedIn, userName, userPhoto } = useContext(SignInContext);
 
   const [isNavOpen, setIsNavOpen] = useState(false);
 
@@ -88,9 +88,18 @@ function Navbarwithlogo() {
             <div className="">EARPHONES</div>
           </Link>
           {isSignedIn ? (
-            <span className="cursor-pointer">
-              Hello {userName.split(" ")[0]} 👋🏻
-            </span>
+            <Fragment>
+              <span className="cursor-pointer">
+                Hello {userName.split(" ")[0]} 👋🏻
+              </span>
+              <div className="border h-9 w-9 rounded-full">
+                <img
+                  className="h-full w-full rounded-full"
+                  src={userPhoto}
+                  alt="HeroImage"
+                />
+              </div>
+            </Fragment>
           ) : (
             <Link onClick={() => setIsNavOpen(false)} to="signin">
               <span className="text-[#D87D4A]">Hello SIGN-IN</span>

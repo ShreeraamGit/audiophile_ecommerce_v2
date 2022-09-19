@@ -11,7 +11,8 @@ import {
 import { useNavigate } from "react-router-dom";
 
 function SignIn() {
-  const { setIsSignedIn, setUserName } = useContext(SignInContext);
+  const { setIsSignedIn, setUserName, setUserPhoto } =
+    useContext(SignInContext);
   const nav = useNavigate();
 
   const logGoogleUser = async () => {
@@ -22,6 +23,7 @@ function SignIn() {
         response.user.displayName.charAt(0).toUpperCase() +
           response.user.displayName.slice(1)
       );
+      setUserPhoto(response.user.photoURL);
       nav("/");
     }
   };
