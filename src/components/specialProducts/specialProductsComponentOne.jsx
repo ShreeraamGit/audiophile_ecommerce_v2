@@ -21,16 +21,18 @@ function SpecialProductsDisplayOne() {
           Upgrade to premium speakers that are phenomenally built to deleiver
           truly remarkable sound
         </p>
-        <Button
-          style={{
-            backgroundColor: "#000000",
-            borderRadius: "0px",
-          }}
-          variant="contained"
-          size="large"
-        >
-          SEE PRODUCT
-        </Button>
+        <div className="xl:mr-auto">
+          <Button
+            style={{
+              backgroundColor: "#000000",
+              borderRadius: "0px",
+            }}
+            variant="contained"
+            size="large"
+          >
+            SEE PRODUCT
+          </Button>
+        </div>
       </div>
     </div>
   );

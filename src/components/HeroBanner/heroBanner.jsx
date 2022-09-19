@@ -56,17 +56,18 @@ function HeroBanner() {
             Experence natural, lifelike audio and exceptional build quality made
             for the passionate music enthusiast
           </p>
-          <Button
-            className="lg:ml-auto"
-            style={{
-              backgroundColor: "#D87D4A",
-              borderRadius: "0px",
-            }}
-            variant="contained"
-            size="large"
-          >
-            SEE PRODUCT
-          </Button>
+          <div className="xl:mr-auto">
+            <Button
+              style={{
+                backgroundColor: "#D87D4A",
+                borderRadius: "0px",
+              }}
+              variant="contained"
+              size="large"
+            >
+              SEE PRODUCT
+            </Button>
+          </div>
         </div>
       </div>
     </div>
