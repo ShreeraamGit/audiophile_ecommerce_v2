@@ -11,14 +11,11 @@ import { ReactComponent as MenuIcon } from "../../assets/menu.svg";
 import { useState, useRef } from "react";
 
 function Navbarwithlogo() {
-  const { currentIconState, cartIconHandler, cartItems, useOutsideAlerter } =
+  const { currentIconState, cartIconHandler, cartItems } =
     useContext(CartContext);
   const { isSignedIn, userName, userPhoto } = useContext(SignInContext);
 
   const [isNavOpen, setIsNavOpen] = useState(false);
-
-  const wrapperRef = useRef(null);
-  useOutsideAlerter(wrapperRef);
 
   return (
     <div className="xl:mr-32 xl:ml-32 pt-7 xl:pr-0 xl:pl-0 pr-5 pl-5 md:pr-12 md:pl-12 border-b border-[#D87D4A]">
@@ -111,7 +108,6 @@ function Navbarwithlogo() {
         </div>
         <div className="h-14 relative flex justify-center items-center">
           <Cart
-            ref={wrapperRef}
             onClick={cartIconHandler}
             className="h-8 w-8 cursor-pointer"
           ></Cart>
