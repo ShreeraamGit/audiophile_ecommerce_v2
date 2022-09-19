@@ -77,7 +77,7 @@ function Navbarwithlogo() {
             <Logo className="h-6"></Logo>
           </Link>
         </div>
-        <div className="border justify-center items-center text-white lg:flex lg:flex-row gap-10 hidden font-extrabold underline underline-offset-4">
+        <div className="justify-center items-center text-white lg:flex lg:flex-row gap-10 hidden font-extrabold underline underline-offset-4">
           <Link onClick={() => setIsNavOpen(false)} to="/headphones">
             <div className="">HEADPHONES</div>
           </Link>
