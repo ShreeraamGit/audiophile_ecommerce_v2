@@ -110,7 +110,7 @@ export const CartProvider = ({ children }) => {
        */
       function handleClickOutside(event) {
         if (ref.current && !ref.current.contains(event.target)) {
-          setCurrentIconState((previous) => !previous);
+          setCurrentIconState(false);
         }
       }
       // Bind the event listener

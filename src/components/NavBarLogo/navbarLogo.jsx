@@ -109,11 +109,9 @@ function Navbarwithlogo() {
             </Link>
           )}
         </div>
-        <div
-          ref={wrapperRef}
-          className="h-14 relative flex justify-center items-center"
-        >
+        <div className="h-14 relative flex justify-center items-center">
           <Cart
+            ref={wrapperRef}
             onClick={cartIconHandler}
             className="h-8 w-8 cursor-pointer"
           ></Cart>
