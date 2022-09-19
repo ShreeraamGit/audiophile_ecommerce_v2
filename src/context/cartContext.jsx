@@ -40,6 +40,7 @@ export const CartContext = createContext({
   handleClickIncrement: () => {},
   handleClickDecrement: () => {},
   handleDelete: () => {},
+  useOutsideAlerter: () => {},
 });
 
 export const CartProvider = ({ children }) => {
@@ -102,6 +103,25 @@ export const CartProvider = ({ children }) => {
     setTotal(newTotalCount);
   }, [cartItems]);
 
+  const useOutsideAlerter = (ref) => {
+    useEffect(() => {
+      /**
+       * Alert if clicked on outside of element
+       */
+      function handleClickOutside(event) {
+        if (ref.current && !ref.current.contains(event.target)) {
+          setCurrentIconState((previous) => !previous);
+        }
+      }
+      // Bind the event listener
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => {
+        // Unbind the event listener on clean up
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }, [ref]);
+  };
+
   const value = {
     currentIconState,
     setCurrentIconState,
@@ -114,6 +134,7 @@ export const CartProvider = ({ children }) => {
     handleClickIncrement,
     handleClickDecrement,
     handleDelete,
+    useOutsideAlerter,
   };
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;

@@ -8,14 +8,17 @@ import CartDropDownContainer from "../cartDropDownContainer/cartDropDownContaine
 import { signOutUserGoogle } from "../../utils/firebase/firebaseUtils.js";
 import { ReactComponent as CloseIcon } from "../../assets/close.svg";
 import { ReactComponent as MenuIcon } from "../../assets/menu.svg";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 function Navbarwithlogo() {
-  const { currentIconState, cartIconHandler, cartItems } =
+  const { currentIconState, cartIconHandler, cartItems, useOutsideAlerter } =
     useContext(CartContext);
   const { isSignedIn, userName, userPhoto } = useContext(SignInContext);
 
   const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const wrapperRef = useRef(null);
+  useOutsideAlerter(wrapperRef);
 
   return (
     <div className="xl:mr-32 xl:ml-32 pt-7 xl:pr-0 xl:pl-0 pr-5 pl-5 md:pr-12 md:pl-12 border-b border-[#D87D4A]">
@@ -106,7 +109,10 @@ function Navbarwithlogo() {
             </Link>
           )}
         </div>
-        <div className="h-14 relative flex justify-center items-center">
+        <div
+          ref={wrapperRef}
+          className="h-14 relative flex justify-center items-center"
+        >
           <Cart
             onClick={cartIconHandler}
             className="h-8 w-8 cursor-pointer"
