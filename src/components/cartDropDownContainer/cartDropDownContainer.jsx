@@ -4,6 +4,7 @@ import { CartContext } from "../../context/cartContext";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { useRef, useEffect } from "react";
+import { motion } from "framer-motion";
 
 function CartDropDownContainer() {
   const {
@@ -12,13 +13,24 @@ function CartDropDownContainer() {
     total,
     cartIconHandler,
     useOutsideAlerter,
+    currentIconState,
   } = useContext(CartContext);
 
   const wrapperRef = useRef(null);
   useOutsideAlerter(wrapperRef);
 
+  const variants = {
+    visible: {
+      opacity: 1,
+    },
+    hidden: { opacity: 0 },
+  };
+
   return (
-    <div
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={variants}
       ref={wrapperRef}
       className="xl:pr-10 xl:pl-10 pr-4 pl-4 z-50 text-[#101010] bg-[#FFFFFF] rounded-lg absolute top-[220%] right-[0] h-fit w-[41vh] xl:w-[60vh]"
     >
@@ -75,7 +87,7 @@ function CartDropDownContainer() {
           </Button>
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

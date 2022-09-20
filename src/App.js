@@ -4,14 +4,14 @@ import Earphones from "./Routes/Earphones/earPhones.jsx";
 import Speakers from "./Routes/Speakers/speakers.jsx";
 import Navigation from "./Routes/Navigation/navigation";
 import ProductPage from "./Routes/ProductPage/productPage";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { ProductContext } from "./context/productContext";
 import { useContext } from "react";
 import SignIn from "./Routes/signIn/signInComponent";
 
 function App() {
   const { products } = useContext(ProductContext);
-  ///console.log(products);
+
   return (
     <Routes>
       <Route path="/" element={<Navigation></Navigation>}>

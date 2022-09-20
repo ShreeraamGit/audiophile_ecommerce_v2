@@ -5,6 +5,7 @@ import Button from "@mui/material/Button";
 import { Link, useLocation } from "react-router-dom";
 import { WindowSizeContext } from "../../context/windowSizeContext";
 import { useContext, useEffect } from "react";
+import { motion } from "framer-motion";
 
 function HeroBanner() {
   const { useWindowSize, updateSize } = useContext(WindowSizeContext);
@@ -45,7 +46,13 @@ function HeroBanner() {
     <div className="relative w-screen h-[90vh] bg-[#191919]">
       <div className="">
         {RenderHeroImage()}
-        <div className="xl:w-[45%] p-6 md:w-[90%] w-[95%] gap-5 xl:gap-7 md:gap-10 flex flex-col justify-center items-center absolute top-1/2 left-1/2 lg:left-[32%] text-white transform -translate-x-1/2 -translate-y-1/2">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 5 }}
+          exit={{ opacity: 0 }}
+          className="xl:w-[45%] p-6 md:w-[90%] w-[95%] gap-5 xl:gap-7 md:gap-10 flex flex-col justify-center items-center absolute top-1/2 left-1/2 lg:left-[32%] text-white transform -translate-x-1/2 -translate-y-1/2"
+        >
           <h5 className="lg:text-left tracking-[0.8rem] text-center w-full md:tracking-[1.2rem] text-lg xl:text-sm md:text-2xl text-[#D87D4A]">
             NEW PRODUCT
           </h5>
@@ -68,7 +75,7 @@ function HeroBanner() {
               SEE PRODUCT
             </Button>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
