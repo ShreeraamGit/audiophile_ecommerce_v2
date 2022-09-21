@@ -6,7 +6,7 @@ export const HerosectionContext = createContext({
 });
 
 export const HerosectionProvider = ({ children }) => {
-  const [pageStatus, setPageStatus] = useState();
+  const [pageStatus, setPageStatus] = useState("/");
 
   const pageStatusHandler = (event) => {
     setPageStatus(event.target.getAttribute("value"));
