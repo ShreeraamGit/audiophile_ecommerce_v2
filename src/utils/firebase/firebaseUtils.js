@@ -8,6 +8,17 @@ import {
   signOut,
 } from "firebase/auth";
 
+import {
+  getFirestore,
+  doc,
+  getDoc,
+  setDoc,
+  collection,
+  writeBatch,
+  query,
+  getDocs,
+} from "firebase/firestore";
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyBC0AHjdIX5FsxSB7juBgAGXXRh_wfra8g",
@@ -20,6 +31,10 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const firebaseApp = initializeApp(firebaseConfig);
+export const auth = getAuth();
+
+// Initialize Cloud Firestore and get a reference to the serviceœ
+export const db = getFirestore(firebaseApp);
 
 ///signIN with google popup
 const provider = new GoogleAuthProvider();
@@ -29,7 +44,6 @@ provider.setCustomParameters({
   prompt: "select_account",
 });
 
-export const auth = getAuth();
 export const signInWithGooglePopup = () => signInWithPopup(auth, provider);
 export const signInWithFacebookPopup = () =>
   signInWithPopup(auth, providerFacebook);
