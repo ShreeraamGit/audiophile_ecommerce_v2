@@ -24,6 +24,7 @@ function SignIn() {
           response.user.displayName.slice(1)
       );
       setUserPhoto(response.user.photoURL);
+
       nav("/");
     }
   };

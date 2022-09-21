@@ -96,7 +96,7 @@ function Navbarwithlogo() {
                 <img
                   className="h-full w-full rounded-full"
                   src={userPhoto}
-                  alt="HeroImage"
+                  alt="userPhoto"
                 />
               </div>
             </Fragment>
