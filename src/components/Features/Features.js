@@ -4,7 +4,7 @@ const Features = (props) => {
   const { product } = props;
 
   return (
-    <div className="mt-20 flex flex-col gap-5">
+    <div className="mt-14 flex flex-col gap-5">
       <h3 className="text-[32px] leading-[38px] tracking-[1.15px] font-medium w-[70%]">
         FEATURES
       </h3>
