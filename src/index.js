@@ -4,29 +4,18 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
-import { ProductsProvider } from "./context/productContext";
-import { HerosectionProvider } from "./context/heroSectionContext.jsx";
-import { CartProvider } from "./context/cartContext";
-import { SignInProvider } from "./context/signInContext";
-import ScrollToTop from "./components/scrollToTop/scrollToTop.jsx";
-import { WindowSizeProvider } from "./context/windowSizeContext.jsx";
+import { Provider } from "react-redux";
+import { store } from "./app/store";
+import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <ScrollToTop />
-      <WindowSizeProvider>
-        <ProductsProvider>
-          <HerosectionProvider>
-            <CartProvider>
-              <SignInProvider>
-                <App />
-              </SignInProvider>
-            </CartProvider>
-          </HerosectionProvider>
-        </ProductsProvider>
-      </WindowSizeProvider>
+      <Provider store={store}>
+        <App />
+      </Provider>
     </BrowserRouter>
   </React.StrictMode>
 );

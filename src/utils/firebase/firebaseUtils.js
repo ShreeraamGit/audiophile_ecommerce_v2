@@ -1,3 +1,4 @@
+import { async } from "@firebase/util";
 import { initializeApp } from "firebase/app";
 import {
   getAuth,
@@ -34,7 +35,23 @@ const firebaseApp = initializeApp(firebaseConfig);
 export const auth = getAuth();
 
 // Initialize Cloud Firestore and get a reference to the serviceœ
-export const db = getFirestore(firebaseApp);
+export const db = getFirestore();
+
+export const addCollectionAndDocuments = async (
+  collectionKey,
+  objectsToAdd
+) => {
+  const batch = writeBatch(db);
+  const collectionRef = collection(db, collectionKey);
+
+  objectsToAdd.forEach((object) => {
+    const docRef = doc(collectionRef, object.name.toLowerCase());
+    batch.set(docRef, object);
+  });
+
+  await batch.commit();
+  console.log("done");
+};
 
 ///signIN with google popup
 const provider = new GoogleAuthProvider();
