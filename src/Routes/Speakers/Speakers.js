@@ -22,7 +22,7 @@ const Speakers = () => {
   return (
     <div className="">
       <Outlet></Outlet>
-      <section className="mt-10 p-6 flex flex-col justify-center items-center gap-32">
+      <section className="">
         {productsList.map((items) => (
           <ProductCard
             pageName={pageName}

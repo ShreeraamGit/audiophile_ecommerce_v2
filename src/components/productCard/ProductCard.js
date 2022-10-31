@@ -5,7 +5,7 @@ import Button from "../Button/Button";
 const ProductCard = (props) => {
   const { productsList } = props;
   return (
-    <div className="">
+    <div className="mt-10 p-6 flex flex-col justify-center items-center ">
       <img
         className="rounded-xl"
         alt={productsList.name}
