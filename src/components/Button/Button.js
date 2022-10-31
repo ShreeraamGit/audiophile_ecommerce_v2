@@ -20,6 +20,14 @@ const Button = (props) => {
           SEE PRODUCT
         </button>
       );
+    } else if (type === "addToCartButtonOrange") {
+      return (
+        <button
+          className={`text-[15px] text-white font-bold tracking-[1px] leading-[25px] bg-[#D87D4A] pt-4 pb-4 pr-8 pl-8`}
+        >
+          ADD TO CART
+        </button>
+      );
     }
     return (
       <button

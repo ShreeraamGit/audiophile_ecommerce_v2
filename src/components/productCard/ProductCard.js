@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Button from "../Button/Button";
 
 const ProductCard = (props) => {
@@ -20,7 +21,9 @@ const ProductCard = (props) => {
         <p className="text-center text-[15px] leading-[25px] font-[300] text-[#000000]">
           {productsList.description}
         </p>
-        <Button type={"buttonOrange"}></Button>
+        <Link to={`${productsList.id}`}>
+          <Button type={"buttonOrange"}></Button>
+        </Link>
       </div>
     </div>
   );

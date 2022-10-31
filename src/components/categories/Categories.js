@@ -5,11 +5,11 @@ import CategoryEarphones from "../CategoryEarphones/CategoryEarphones";
 
 const Categories = () => {
   return (
-    <Fragment>
+    <div className="mt-32 flex flex-col gap-20">
       <CategorySpeaker></CategorySpeaker>
       <CategoryHeadphone></CategoryHeadphone>
       <CategoryEarphones></CategoryEarphones>
-    </Fragment>
+    </div>
   );
 };
 

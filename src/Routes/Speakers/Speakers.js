@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import PageName from "../../components/PageName/PageName.js";
 import { useSelector, useDispatch } from "react-redux";
-import { useParams, useLocation } from "react-router-dom";
+import { useParams, useLocation, Outlet } from "react-router-dom";
 import { getPageName } from "../../features/pageName/pageNameSlice";
 import ProductCard from "../../components/productCard/ProductCard.js";
 
@@ -20,11 +20,9 @@ const Speakers = () => {
   );
 
   return (
-    <div className="text-5xl">
-      <div className="hero-section relative h-fit bg-[#101010] ">
-        <PageName pageName={pageName}></PageName>
-      </div>
-      <section className="mt-14 p-6 flex flex-col justify-center items-center gap-32">
+    <div className="">
+      <Outlet></Outlet>
+      <section className="mt-10 p-6 flex flex-col justify-center items-center gap-32">
         {productsList.map((items) => (
           <ProductCard
             pageName={pageName}
