@@ -11,7 +11,7 @@ const Home = () => {
   const { pathname } = useLocation();
   return (
     <div className="">
-      <nav className="hero-section mb-28 h-fit bg-[#101010] pt-7">
+      <nav className="hero-section h-fit bg-[#101010] pt-7">
         <NavBar></NavBar>
         <HeroSection></HeroSection>
       </nav>
