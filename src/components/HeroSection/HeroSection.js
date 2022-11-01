@@ -11,7 +11,7 @@ const HeroSection = () => {
   const renderHeroSection = () => {
     if (pathname === "/") {
       return (
-        <div className="hero-section mb-28 relative h-fit bg-[#101010]">
+        <div className="hero-section relative h-fit bg-[#101010]">
           <HeroSectionImage></HeroSectionImage>
         </div>
       );
