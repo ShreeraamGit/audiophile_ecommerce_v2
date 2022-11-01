@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../Button/Button";
+import { Link } from "react-router-dom";
 
 const YouMayAlsoLike = (props) => {
   const { product } = props;
@@ -22,7 +23,9 @@ const YouMayAlsoLike = (props) => {
             <h3 className="text-[24px] leading-[38px] tracking-[2px] font-bold text-center">
               {items.name.toLocaleUpperCase()}
             </h3>
-            <Button type={"buttonOrange"}></Button>
+            <Link to={`${product.id}`}>
+              <Button type={"buttonOrange"}></Button>
+            </Link>
           </div>
         ))}
       </div>

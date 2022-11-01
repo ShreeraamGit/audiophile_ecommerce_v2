@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { Fragment, useEffect } from "react";
 import PageName from "../../components/PageName/PageName.js";
 import { useSelector, useDispatch } from "react-redux";
 import { Outlet, useLocation } from "react-router-dom";
@@ -20,18 +20,20 @@ const Earphones = () => {
   );
 
   return (
-    <div className="text-5xl">
+    <Fragment>
+      <div className="text-5xl">
+        <section className="">
+          {productsList.map((items) => (
+            <ProductCard
+              pageName={pageName}
+              key={items.id}
+              productsList={items}
+            ></ProductCard>
+          ))}
+        </section>
+      </div>
       <Outlet></Outlet>
-      <section className="">
-        {productsList.map((items) => (
-          <ProductCard
-            pageName={pageName}
-            key={items.id}
-            productsList={items}
-          ></ProductCard>
-        ))}
-      </section>
-    </div>
+    </Fragment>
   );
 };
 

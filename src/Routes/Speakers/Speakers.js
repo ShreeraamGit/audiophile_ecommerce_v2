@@ -4,6 +4,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { useParams, useLocation, Outlet } from "react-router-dom";
 import { getPageName } from "../../features/pageName/pageNameSlice";
 import ProductCard from "../../components/productCard/ProductCard.js";
+import Categories from "../../components/categories/Categories.js";
+import About from "../../components/About/About.js";
 
 const Speakers = () => {
   const { data } = useSelector((state) => state.data);
@@ -21,7 +23,6 @@ const Speakers = () => {
 
   return (
     <div className="">
-      <Outlet></Outlet>
       <section className="">
         {productsList.map((items) => (
           <ProductCard
