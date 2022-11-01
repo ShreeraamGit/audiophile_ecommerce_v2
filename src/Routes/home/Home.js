@@ -24,7 +24,7 @@ const Home = () => {
       )}
       <main className="flex flex-col justify-center items-center gap-20">
         {pathname === "/" ? null : <Outlet></Outlet>}
-        <section className="categories-section h-fit w-full p-6 flex flex-col gap-24">
+        <section className="categories-section h-fit w-full p-6 flex flex-col md:flex gap-24">
           <Categories></Categories>
         </section>
         {pathname === "/" ? <Outlet></Outlet> : null}

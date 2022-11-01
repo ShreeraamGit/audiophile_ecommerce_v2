@@ -20,7 +20,11 @@ const CategoryEarphones = () => {
         </Link>
       </div>
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/4">
-        <img className="" src={HomeEarphones} alt="Categoryspeaker"></img>
+        <img
+          className="md:h-[10rem] md:w-full"
+          src={HomeEarphones}
+          alt="Categoryspeaker"
+        ></img>
       </div>
     </div>
   );

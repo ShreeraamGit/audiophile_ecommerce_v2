@@ -10,7 +10,7 @@ const NavBar = () => {
     <nav className="nav-bar flex p-4 border-b justify-between items-center">
       <Icon color="white" w={35} h={35} as={BiMenuAltRight}></Icon>
       <Link to="/">
-        <Logo></Logo>
+        <Logo className=""></Logo>
       </Link>
       <Icon color="white" w={35} h={35} as={BsCart4}></Icon>
     </nav>

@@ -19,7 +19,11 @@ const CategorySpeaker = () => {
         </Link>
       </div>
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/4">
-        <img className="" src={HomeSpeaker} alt="Categoryspeaker"></img>
+        <img
+          className="md:h-[10rem] md:w-full"
+          src={HomeSpeaker}
+          alt="Categoryspeaker"
+        ></img>
       </div>
     </div>
   );

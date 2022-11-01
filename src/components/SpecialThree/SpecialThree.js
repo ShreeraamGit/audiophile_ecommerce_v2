@@ -4,7 +4,7 @@ import Headphoneimage from "../../assets/home/mobile/image-earphones-yx1.jpg";
 
 const SpecialThree = () => {
   return (
-    <div className="h-fit relative flex flex-col gap-7">
+    <div className="h-fit relative flex flex-col  gap-7">
       <img
         className="rounded-xl"
         src={Headphoneimage}
