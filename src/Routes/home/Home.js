@@ -9,7 +9,6 @@ import { useLocation } from "react-router-dom";
 
 const Home = () => {
   const { pathname } = useLocation();
-  console.log(pathname);
   return (
     <div className="">
       <nav className="hero-section h-fit bg-[#101010] pt-7">
