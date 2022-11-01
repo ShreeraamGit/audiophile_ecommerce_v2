@@ -32,6 +32,7 @@ const Speakers = () => {
           ></ProductCard>
         ))}
       </section>
+      <Outlet></Outlet>
     </div>
   );
 };
