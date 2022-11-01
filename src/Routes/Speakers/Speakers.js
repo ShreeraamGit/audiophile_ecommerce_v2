@@ -1,11 +1,8 @@
 import React, { useEffect } from "react";
-import PageName from "../../components/PageName/PageName.js";
 import { useSelector, useDispatch } from "react-redux";
-import { useParams, useLocation, Outlet } from "react-router-dom";
+import { useLocation, Outlet } from "react-router-dom";
 import { getPageName } from "../../features/pageName/pageNameSlice";
 import ProductCard from "../../components/productCard/ProductCard.js";
-import Categories from "../../components/categories/Categories.js";
-import About from "../../components/About/About.js";
 
 const Speakers = () => {
   const { data } = useSelector((state) => state.data);

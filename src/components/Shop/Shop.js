@@ -1,7 +1,5 @@
 import React, { Fragment } from "react";
-import Categories from "../categories/Categories";
 import SpecialProducts from "../SpecialProducts/SpecialProducts";
-import About from "../About/About";
 
 const Shop = () => {
   return (
