@@ -6,6 +6,9 @@ import CategoryEarphones from "../CategoryEarphones/CategoryEarphones";
 const Categories = () => {
   return (
     <div className="flex flex-col gap-20">
+      <h3 className="text-[24px] leading-[38px] tracking-[2px] font-bold text-center">
+        CATEGORIES
+      </h3>
       <CategorySpeaker></CategorySpeaker>
       <CategoryHeadphone></CategoryHeadphone>
       <CategoryEarphones></CategoryEarphones>
