@@ -2,6 +2,7 @@ import React from "react";
 import ProductDetailsCard from "../../components/ProductDetailscard/ProductDetailsCard";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
+import Categories from "../../components/categories/Categories";
 
 const ProductBuyingPage = () => {
   const { data } = useSelector((state) => state.data);
@@ -20,6 +21,9 @@ const ProductBuyingPage = () => {
             product={items}
           ></ProductDetailsCard>
         ))}
+      </section>
+      <section className="categories-section h-fit w-full p-6 flex flex-col gap-24">
+        <Categories></Categories>
       </section>
     </div>
   );

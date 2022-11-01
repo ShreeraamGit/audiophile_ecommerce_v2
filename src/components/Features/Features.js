@@ -5,7 +5,7 @@ const Features = (props) => {
 
   return (
     <div className="flex flex-col gap-5">
-      <h3 className="text-[32px] leading-[38px] tracking-[1.15px] font-medium w-[70%]">
+      <h3 className="text-[24px] leading-[38px] tracking-[2px] font-bold">
         FEATURES
       </h3>
       <p className="text-[15px] leading-[25px] text-justify font-[300] text-[#000000]">

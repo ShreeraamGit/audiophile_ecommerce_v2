@@ -5,7 +5,7 @@ const InTheBox = (props) => {
 
   return (
     <div className="flex flex-col gap-7">
-      <h3 className="text-[32px] leading-[38px] tracking-[1.15px] font-medium w-[70%]">
+      <h3 className="text-[24px] leading-[38px] tracking-[2px] font-bold">
         IN THE BOX
       </h3>
       <div className="flex flex-col gap-4">

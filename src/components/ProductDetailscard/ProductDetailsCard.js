@@ -4,6 +4,7 @@ import AddToCart from "../AddToCart/AddToCart";
 import Features from "../Features/Features";
 import InTheBox from "../InTheBox/InTheBox";
 import ProductGallery from "../ProductGallery/ProductGallery";
+import YouMayAlsoLike from "../YouMayAlsoLike/YouMayAlsoLike";
 
 const ProductDetailsCard = (props) => {
   const { product } = props;
@@ -19,6 +20,7 @@ const ProductDetailsCard = (props) => {
       <Features product={product}></Features>
       <InTheBox product={product}></InTheBox>
       <ProductGallery product={product}></ProductGallery>
+      <YouMayAlsoLike product={product}></YouMayAlsoLike>
     </div>
   );
 };

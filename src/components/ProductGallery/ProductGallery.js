@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductGallery = (props) => {
   const { product } = props;
-  console.log(product);
+
   return (
     <div className="flex flex-col justify-center items-center gap-5">
       <img
