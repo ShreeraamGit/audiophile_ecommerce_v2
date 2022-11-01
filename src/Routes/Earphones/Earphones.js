@@ -22,7 +22,7 @@ const Earphones = () => {
   return (
     <div className="text-5xl">
       <Outlet></Outlet>
-      <section className="mt-14 p-6 flex flex-col justify-center items-center gap-32">
+      <section className="">
         {productsList.map((items) => (
           <ProductCard
             pageName={pageName}
