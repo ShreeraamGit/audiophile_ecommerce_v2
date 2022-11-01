@@ -21,7 +21,7 @@ const ProductCard = (props) => {
         <p className="text-center text-[15px] leading-[25px] font-[300] text-[#000000]">
           {productsList.description}
         </p>
-        <Link to={`${productsList.id}`}>
+        <Link to={`${productsList.slug}`}>
           <Button type={"buttonOrange"}></Button>
         </Link>
       </div>

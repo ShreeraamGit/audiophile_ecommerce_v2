@@ -13,21 +13,36 @@ function App() {
         <Route index element={<Shop></Shop>}></Route>
         <Route path="speakers" element={<Speakers></Speakers>}>
           <Route
-            path=":productId"
+            path=":productName"
             element={<ProductBuyingPage></ProductBuyingPage>}
-          ></Route>
+          >
+            <Route
+              path=":productName"
+              element={<ProductBuyingPage></ProductBuyingPage>}
+            ></Route>
+          </Route>
         </Route>
         <Route path="headphones" element={<Headphones></Headphones>}>
           <Route
-            path=":productId"
+            path=":productName"
             element={<ProductBuyingPage></ProductBuyingPage>}
-          ></Route>
+          >
+            <Route
+              path=":productName"
+              element={<ProductBuyingPage></ProductBuyingPage>}
+            ></Route>
+          </Route>
         </Route>
         <Route path="earphones" element={<Earphones></Earphones>}>
           <Route
-            path=":productId"
+            path=":productName"
             element={<ProductBuyingPage></ProductBuyingPage>}
-          ></Route>
+          >
+            <Route
+              path=":productName"
+              element={<ProductBuyingPage></ProductBuyingPage>}
+            ></Route>
+          </Route>
         </Route>
       </Route>
     </Routes>

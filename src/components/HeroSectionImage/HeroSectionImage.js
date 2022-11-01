@@ -16,7 +16,7 @@ const HeroSectionImage = () => {
         <h1 className="text-[40px] text-center leading-[44px] font-semibold tracking-wider">
           XX99 MARK II HEADPHONES
         </h1>
-        <p className=" text-[15px] leading-[25px] text-center font-medium tracking-[1.5px]">
+        <p className="text-[15px] leading-[25px] font-[300] text-center">
           Experience natural, lifelike audio and exceptional build quality made
           fort he passionate music enthusiast
         </p>

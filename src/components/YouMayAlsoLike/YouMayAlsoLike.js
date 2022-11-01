@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const YouMayAlsoLike = (props) => {
   const { product } = props;
+  console.log(product);
   return (
     <div className="flex flex-col gap-10">
       <h3 className="text-[24px] leading-[38px] tracking-[2px] font-bold text-center">
@@ -23,7 +24,7 @@ const YouMayAlsoLike = (props) => {
             <h3 className="text-[24px] leading-[38px] tracking-[2px] font-bold text-center">
               {items.name.toLocaleUpperCase()}
             </h3>
-            <Link to={`${product.id}`}>
+            <Link to={`${items.slug}`}>
               <Button type={"buttonOrange"}></Button>
             </Link>
           </div>

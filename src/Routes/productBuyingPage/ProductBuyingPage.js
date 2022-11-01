@@ -5,10 +5,8 @@ import { useSelector } from "react-redux";
 
 const ProductBuyingPage = () => {
   const { data } = useSelector((state) => state.data);
-  const { productId } = useParams();
-  const selectedProduct = data.filter(
-    (items) => items.id === Number(productId)
-  );
+  const { productName } = useParams();
+  const selectedProduct = data.filter((items) => items.slug === productName);
 
   return (
     <div className="">
@@ -21,7 +19,6 @@ const ProductBuyingPage = () => {
           ></ProductDetailsCard>
         ))}
       </section>
-      <Outlet></Outlet>
     </div>
   );
 };
