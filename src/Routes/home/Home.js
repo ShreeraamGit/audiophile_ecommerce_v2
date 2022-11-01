@@ -11,10 +11,17 @@ const Home = () => {
   const { pathname } = useLocation();
   return (
     <div className="">
-      <nav className="hero-section h-fit bg-[#101010] pt-7">
-        <NavBar></NavBar>
-        <HeroSection></HeroSection>
-      </nav>
+      {pathname === "/" ? (
+        <nav className="hero-section mb-20 h-fit bg-[#101010] pt-7">
+          <NavBar></NavBar>
+          <HeroSection></HeroSection>
+        </nav>
+      ) : (
+        <nav className="hero-section h-fit bg-[#101010] pt-7">
+          <NavBar></NavBar>
+          <HeroSection></HeroSection>
+        </nav>
+      )}
       <main className="flex flex-col justify-center items-center gap-20">
         {pathname === "/" ? null : <Outlet></Outlet>}
         <section className="categories-section h-fit w-full p-6 flex flex-col gap-24">
@@ -33,22 +40,3 @@ const Home = () => {
 };
 
 export default Home;
-
-/*<main className="">
-        <div className="hero-section h-fit bg-[#101010] pt-7">
-          <NavBar></NavBar>
-          <HeroSection></HeroSection>
-        </div>
-        <div className="flex flex-col gap-20">
-          <section className="categories-section h-fit w-full p-6 flex flex-col gap-24">
-            <Categories></Categories>
-          </section>
-          <Outlet></Outlet>
-          <section className="mt-0 h-fit w-full p-6">
-            <About></About>
-          </section>
-        </div>
-      </main>
-      <footer className=" h-fit mt-24 w-full p-16 bg-[#000000] flex justify-center items-center">
-        <Footer></Footer>
-      </footer>*/
