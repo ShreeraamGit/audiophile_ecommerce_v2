@@ -15,7 +15,7 @@ const Home = () => {
         <NavBar></NavBar>
         <HeroSection></HeroSection>
       </nav>
-      <main className="">
+      <main className="flex flex-col justify-center items-center gap-20">
         {pathname === "/" ? null : <Outlet></Outlet>}
         <section className="categories-section h-fit w-full p-6 flex flex-col gap-24">
           <Categories></Categories>
