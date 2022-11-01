@@ -21,8 +21,7 @@ const Headphones = () => {
 
   return (
     <div className="">
-      <Outlet></Outlet>
-      <section className="">
+      <section className="flex flex-col justify-center items-center gap-20">
         {productsList.map((items) => (
           <ProductCard
             pageName={pageName}
@@ -31,6 +30,7 @@ const Headphones = () => {
           ></ProductCard>
         ))}
       </section>
+      <Outlet></Outlet>
     </div>
   );
 };

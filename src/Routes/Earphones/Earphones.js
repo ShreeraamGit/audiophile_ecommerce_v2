@@ -22,7 +22,7 @@ const Earphones = () => {
   return (
     <Fragment>
       <div className="text-5xl">
-        <section className="">
+        <section className="flex flex-col justify-center items-center gap-20">
           {productsList.map((items) => (
             <ProductCard
               pageName={pageName}

@@ -20,7 +20,7 @@ const Speakers = () => {
 
   return (
     <div className="">
-      <section className="">
+      <section className="flex flex-col justify-center items-center gap-20">
         {productsList.map((items) => (
           <ProductCard
             pageName={pageName}

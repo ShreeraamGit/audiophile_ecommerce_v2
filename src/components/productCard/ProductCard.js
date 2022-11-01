@@ -5,13 +5,13 @@ import Button from "../Button/Button";
 const ProductCard = (props) => {
   const { productsList } = props;
   return (
-    <div className="mt-10 p-6 flex flex-col justify-center items-center ">
+    <div className="p-6 flex flex-col justify-center items-center gap-10">
       <img
         className="rounded-xl"
         alt={productsList.name}
         src={productsList.image.mobile}
       ></img>
-      <div className="mt-10 flex flex-col justify-center items-center gap-7">
+      <div className="flex flex-col justify-center items-center gap-7">
         <span className="text-[14px] tracking-[10px] text-[#D87D4A]">
           {productsList.new ? "NEW PRODUCT" : null}
         </span>
