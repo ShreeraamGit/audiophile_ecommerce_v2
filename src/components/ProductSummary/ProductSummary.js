@@ -1,10 +1,11 @@
 import React from "react";
+import AddToCart from "../AddToCart/AddToCart";
 
 const ProductSummary = (props) => {
   const { product } = props;
 
   return (
-    <div className=" flex flex-col gap-7">
+    <div className=" flex flex-col gap-8">
       <h3 className="text-[32px] leading-[38px] tracking-[1.15px] font-medium w-[70%]">
         {product.name.toLocaleUpperCase()}
       </h3>
@@ -17,6 +18,7 @@ const ProductSummary = (props) => {
           currency: "EUR",
         })}
       </h5>
+      <AddToCart></AddToCart>
     </div>
   );
 };

@@ -10,7 +10,10 @@ const InTheBox = (props) => {
       </h3>
       <div className="flex flex-col gap-4">
         {product.includes.map((items) => (
-          <div className="flex justify-start items-center gap-10">
+          <div
+            key={items.item}
+            className="flex justify-start items-center gap-10"
+          >
             <span className="text-[#D87D4A] text-[18px] font-bold">
               {items.quantity}x
             </span>
