@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { AiOutlineRight } from "react-icons/ai";
 import { Icon } from "@chakra-ui/react";
 import HomeSpeaker from "../../assets/shared/desktop/image-category-thumbnail-speakers.png";
-import { Link } from "react-router-dom";
-const CategorySpeaker = () => {
+
+const TabletCategorySpeaker = () => {
   return (
     <div className="bg-[#F1F1F1] relative w-full h-[13rem] flex justify-center items-end rounded-xl">
       <div className="flex flex-col gap-3 justify-center items-center p-5">
@@ -29,4 +30,4 @@ const CategorySpeaker = () => {
   );
 };
 
-export default CategorySpeaker;
+export default TabletCategorySpeaker;

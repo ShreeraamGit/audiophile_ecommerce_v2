@@ -1,9 +1,9 @@
 import React from "react";
 import { Fragment } from "react";
-import HeroImageMobile from "../../assets/home/mobile/image-header.jpg";
 import Button from "../Button/Button";
+import HeroImageMobile from "../../assets/home/tablet/image-header.jpg";
 
-const HeroSectionImage = () => {
+const TabletHerosectionImage = () => {
   return (
     <Fragment>
       <div className="hero-section-image">
@@ -13,10 +13,10 @@ const HeroSectionImage = () => {
         <h5 className="text-[13px] text-[#F1F1F1] font-light tracking-[12px]">
           NEW PRODUCT
         </h5>
-        <h1 className="text-[40px] md:text-[56px] md:leading-[58px] text-center leading-[44px] font-semibold tracking-wider">
+        <h1 className="text-[56px] w-[50%] leading-[58px] text-center font-semibold tracking-wider">
           XX99 MARK II HEADPHONES
         </h1>
-        <p className="text-[15px] md:w-[50%] leading-[25px] font-[300] text-center">
+        <p className="text-[16px] w-[50%] leading-[25px] font-[300] text-center">
           Experience natural, lifelike audio and exceptional build quality made
           fort he passionate music enthusiast
         </p>
@@ -26,4 +26,4 @@ const HeroSectionImage = () => {
   );
 };
 
-export default HeroSectionImage;
+export default TabletHerosectionImage;

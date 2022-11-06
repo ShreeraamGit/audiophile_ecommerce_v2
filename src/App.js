@@ -5,22 +5,8 @@ import Speakers from "./Routes/Speakers/Speakers";
 import Headphones from "./Routes/Headphones/Headphones";
 import Earphones from "./Routes/Earphones/Earphones";
 import ProductBuyingPage from "./Routes/productBuyingPage/ProductBuyingPage";
-import { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { getWindowDimensions } from "./features/mediaQuery/MediaQuerySlice";
 
 function App() {
-  const dispatch = useDispatch();
-
-  const { screenSize } = useSelector((state) => state.screenSize);
-  useEffect(() => {
-    function handleResize() {
-      dispatch(getWindowDimensions());
-    }
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, [screenSize]);
-
   return (
     <Routes>
       <Route path="/" element={<Home></Home>}>

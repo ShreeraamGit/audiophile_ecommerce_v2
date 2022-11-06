@@ -1,12 +1,12 @@
 import React from "react";
-import AboutImage from "../../assets/shared/mobile/image-best-gear.jpg";
+import AboutImageTablet from "../../assets/shared/tablet/image-best-gear.jpg";
 
-const About = () => {
+const TabletAbout = () => {
   return (
     <div className="flex flex-col gap-10">
-      <img className="rounded-xl" src={AboutImage} alt="aboutimage"></img>
+      <img className="rounded-xl" src={AboutImageTablet} alt="aboutimage"></img>
       <div className="flex flex-col gap-9 md:justify-center md:items-center">
-        <h2 className="text-[32px] md:w-[70%] text-center tracking-[1.5px] leading-[40px] font-medium">
+        <h2 className="text-[32px] md:w-[70%] text-center tracking-[1.5px] leading-[40px] font-bold">
           BRINGING YOU THE <span className="text-[#D87D4A]">BEST</span> AUDIO
           GEAR
         </h2>
@@ -23,4 +23,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default TabletAbout;

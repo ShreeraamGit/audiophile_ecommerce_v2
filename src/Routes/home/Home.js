@@ -1,42 +1,40 @@
-import React from "react";
-import NavBar from "../../components/NavBar/NavBar";
-import About from "../../components/About/About";
-import Footer from "../../components/Footer/Footer";
-import { Outlet } from "react-router-dom";
-import HeroSection from "../../components/HeroSection/HeroSection";
-import Categories from "../../components/categories/Categories";
-import { useLocation } from "react-router-dom";
+import React, { Fragment } from "react";
+import MobileView from "../../views/Mobile/MobileView";
+import TabletView from "../../views/Tablet/TabletView";
+import { useMediaQuery } from "react-responsive";
 
 const Home = () => {
-  const { pathname } = useLocation();
-  return (
-    <div className="">
-      {pathname === "/" ? (
-        <nav className="hero-section mb-20 h-fit bg-[#101010] pt-7">
-          <NavBar></NavBar>
-          <HeroSection></HeroSection>
-        </nav>
-      ) : (
-        <nav className="hero-section h-fit bg-[#101010] pt-7">
-          <NavBar></NavBar>
-          <HeroSection></HeroSection>
-        </nav>
-      )}
-      <main className="flex flex-col justify-center items-center gap-20">
-        {pathname === "/" ? null : <Outlet></Outlet>}
-        <section className="categories-section h-fit w-full p-6 flex flex-col md:flex gap-24">
-          <Categories></Categories>
-        </section>
-        {pathname === "/" ? <Outlet></Outlet> : null}
-        <section className="mt-0 h-fit w-full p-6">
-          <About></About>
-        </section>
-      </main>
-      <footer className=" h-fit mt-24 w-full p-16 bg-[#000000] flex justify-center items-center">
-        <Footer></Footer>
-      </footer>
-    </div>
-  );
+  const isLaptop = useMediaQuery({
+    query: "(max-width: 1280px)",
+  });
+
+  const isTablet = useMediaQuery({
+    query: "(max-width: 1024px)",
+  });
+
+  const isMobile = useMediaQuery({
+    query: "(max-width: 600px)",
+  });
+
+  const isDesktop = useMediaQuery({
+    query: "(max-width: 1536px)",
+  });
+
+  const renderView = () => {
+    if (isMobile) {
+      return <MobileView></MobileView>;
+    } else if (isTablet) {
+      return <TabletView></TabletView>;
+    } else if (isLaptop) {
+      return <h1 className="">IS Laptop</h1>;
+    } else if (isDesktop) {
+      return <h1 className="">IS Desktop</h1>;
+    } else {
+      return <h1 className="">IS LArge</h1>;
+    }
+  };
+
+  return <Fragment>{renderView()}</Fragment>;
 };
 
 export default Home;
