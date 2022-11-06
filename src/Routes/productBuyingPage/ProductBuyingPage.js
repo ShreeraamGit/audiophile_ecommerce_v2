@@ -3,6 +3,9 @@ import ProductDetailsCard from "../../components/ProductDetailscard/ProductDetai
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
+import TabletProductDetailsCard from "../../components/ProductDetailscard/TabletProductDetailsCard";
+import { Fragment } from "react";
 
 const ProductBuyingPage = () => {
   const { data } = useSelector((state) => state.data);
@@ -10,21 +13,65 @@ const ProductBuyingPage = () => {
   const navigate = useNavigate();
   const selectedProduct = data.filter((items) => items.slug === productName);
 
-  return (
-    <div className="">
-      <button onClick={() => navigate(-1)} className=" mt-7 p-6">
-        Go Back
-      </button>
-      <section className="mt-1 p-6 flex flex-col justify-center items-center gap-">
-        {selectedProduct.map((items) => (
-          <ProductDetailsCard
-            key={items.id}
-            product={items}
-          ></ProductDetailsCard>
-        ))}
-      </section>
-    </div>
-  );
+  const isLaptop = useMediaQuery({
+    query: "(max-width: 1280px)",
+  });
+
+  const isTablet = useMediaQuery({
+    query: "(max-width: 1024px)",
+  });
+
+  const isMobile = useMediaQuery({
+    query: "(max-width: 600px)",
+  });
+
+  const isDesktop = useMediaQuery({
+    query: "(max-width: 1536px)",
+  });
+
+  const renderProductDetailsCard = () => {
+    if (isMobile) {
+      return (
+        <div className="">
+          <button onClick={() => navigate(-1)} className=" mt-7 p-6">
+            Go Back
+          </button>
+          <section className="mt-1 p-6 flex flex-col justify-center items-center gap-">
+            {selectedProduct.map((items) => (
+              <ProductDetailsCard
+                key={items.id}
+                product={items}
+              ></ProductDetailsCard>
+            ))}
+          </section>
+        </div>
+      );
+    } else if (isTablet) {
+      return (
+        <div className="p-10 flex flex-col justify-start items-start gap-14">
+          <button onClick={() => navigate(-1)} className="mt-7 text-[1.5rem]">
+            Go Back
+          </button>
+          <section className="mt-1 flex flex-col justify-center items-center gap-">
+            {selectedProduct.map((items) => (
+              <TabletProductDetailsCard
+                key={items.id}
+                product={items}
+              ></TabletProductDetailsCard>
+            ))}
+          </section>
+        </div>
+      );
+    } else if (isLaptop) {
+      return <h1 className="">IS Laptop</h1>;
+    } else if (isDesktop) {
+      return <h1 className="">IS Desktop</h1>;
+    } else {
+      return <h1 className="">IS LArge</h1>;
+    }
+  };
+
+  return <Fragment>{renderProductDetailsCard()}</Fragment>;
 };
 
 export default ProductBuyingPage;
