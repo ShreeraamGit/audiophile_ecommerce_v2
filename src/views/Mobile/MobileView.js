@@ -21,13 +21,13 @@ const MobileView = () => {
           <HeroSection></HeroSection>
         </nav>
       )}
-      <main className="flex flex-col w-screen justify-center items-center gap-20">
+      <main className="flex flex-col w-screen justify-center p-6 items-center gap-20">
         {pathname === "/" ? null : <Outlet></Outlet>}
-        <section className="categories-section h-fit w-full p-6 flex flex-col">
+        <section className="categories-section h-fit w-full flex flex-col">
           <Categories></Categories>
         </section>
         {pathname === "/" ? <Outlet></Outlet> : null}
-        <section className="mt-0 h-fit w-full p-6">
+        <section className="mt-0 h-fit w-full">
           <About></About>
         </section>
       </main>

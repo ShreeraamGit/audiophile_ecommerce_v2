@@ -4,15 +4,17 @@ import FooterNav from "./FooterNav/FooterNav";
 import FooterAbout from "./FooterAbout/FooterAbout";
 import FooterSocial from "./FooterSocial/FooterSocial";
 
-const Footer = () => {
+const DesktopFooter = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-14">
-      <Logo className=""></Logo>
-      <FooterNav></FooterNav>
+    <div className="flex flex-col gap-14">
+      <div className="flex justify-between items-center">
+        <Logo></Logo>
+        <FooterNav></FooterNav>
+      </div>
       <FooterAbout></FooterAbout>
       <FooterSocial></FooterSocial>
     </div>
   );
 };
 
-export default Footer;
+export default DesktopFooter;

@@ -5,6 +5,9 @@ import SpecialTwo from "../SpecialTwo/SpecialTwo";
 import TabletSpecialOne from "../SpeacialOne/TabletSpecialOne";
 import TabletSpecialTwo from "../SpecialTwo/TabletSpecialTwo";
 import TabletSpecialThree from "../SpecialThree/TabletSpecialThree";
+import DesktopSpecialOne from "../SpeacialOne/DesktopSpecialOne";
+import DesktopSpecialTwo from "../SpecialTwo/DesktopSpecialTwo";
+import DesktopSpecailThree from "../SpecialThree/DesktopSpecailThree";
 import { useMediaQuery } from "react-responsive";
 
 const SpecialProducts = () => {
@@ -44,7 +47,13 @@ const SpecialProducts = () => {
     } else if (isLaptop) {
       return <h1 className="">Laptop Special Products</h1>;
     } else if (isDesktop) {
-      return <h1 className="">Desktop Special Products</h1>;
+      return (
+        <Fragment>
+          <DesktopSpecialOne></DesktopSpecialOne>
+          <DesktopSpecialTwo></DesktopSpecialTwo>
+          <DesktopSpecailThree></DesktopSpecailThree>
+        </Fragment>
+      );
     } else {
       return <h1 className="">Large Special Products</h1>;
     }

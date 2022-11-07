@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const FooterNav = () => {
   return (
-    <div className="text-white tetx-[18px] tracking-[1.3px] font-semibold mt-10 flex flex-col md:flex-row justify-center md:mr-auto items-center gap-6">
+    <div className="text-white text-[18px] lg:flex-row tracking-[1.3px] font-semibold flex flex-col justify-center items-center gap-6">
       <Link to="/">
         <h6 className="">HOME</h6>
       </Link>

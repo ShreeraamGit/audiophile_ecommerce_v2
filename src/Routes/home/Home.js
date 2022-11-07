@@ -1,6 +1,8 @@
 import React, { Fragment } from "react";
 import MobileView from "../../views/Mobile/MobileView";
 import TabletView from "../../views/Tablet/TabletView";
+import LaptopView from "../../views/Laptop/LaptopView";
+import DesktopView from "../../views/Desktop/DesktopView";
 import { useMediaQuery } from "react-responsive";
 
 const Home = () => {
@@ -26,9 +28,9 @@ const Home = () => {
     } else if (isTablet) {
       return <TabletView></TabletView>;
     } else if (isLaptop) {
-      return <h1 className="">IS Laptop</h1>;
+      return <LaptopView></LaptopView>;
     } else if (isDesktop) {
-      return <h1 className="">IS Desktop</h1>;
+      return <DesktopView></DesktopView>;
     } else {
       return <h1 className="">IS LArge</h1>;
     }

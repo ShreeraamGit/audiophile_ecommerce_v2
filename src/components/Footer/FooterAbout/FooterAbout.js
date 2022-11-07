@@ -2,7 +2,7 @@ import React from "react";
 
 const FooterAbout = () => {
   return (
-    <div className="text-white text-[15px] md:text-justify font-medium leading-[25px] mt-10 text-center">
+    <div className="text-white text-[15px] lg:w-[45%] md:text-justify font-medium leading-[25px] text-center">
       <p className="">
         Audiophile is all in one stop to fullfill your audio needs. We are a
         small team of music lovers and sound specialists who are devoted to
