@@ -13,11 +13,11 @@ const DesktopProductCard = (props) => {
       }
     >
       <img
-        className="rounded-xl h-[25rem] w-[40%]"
+        className="rounded-xl h-[30rem] w-[50%]"
         alt={productsList.name}
         src={productsList.categoryImage.desktop}
       ></img>
-      <div className="flex flex-col gap-9 w-[45%]">
+      <div className="flex flex-col gap-9 w-[50%]">
         <span className="text-[14px] tracking-[10px] text-[#D87D4A]">
           {productsList.new ? "NEW PRODUCT" : null}
         </span>
