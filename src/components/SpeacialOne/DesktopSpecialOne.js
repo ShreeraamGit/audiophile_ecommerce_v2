@@ -16,7 +16,7 @@ const DesktopSpecialOne = () => {
           <img className="" src={SpeakerImageMobile} alt="speakerImage"></img>
         </div>
         <div className="flex flex-col gap-10 w-[70%] mt-10">
-          <h2 className="text-[#FFFFFF] font-bold text-[44px] leading-[44px] tracking-[1.5px] w-[60%]">
+          <h2 className="text-[#FFFFFF] font-bold text-[56px] leading-[58px] tracking-[2px] w-[60%]">
             ZX9 SPEAKER
           </h2>
           <p className="text-[#FFFFFF] font-medium leading-[25px] text-[15px] tracking-[1.3px]">

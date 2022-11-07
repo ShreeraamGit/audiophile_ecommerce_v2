@@ -1,6 +1,6 @@
 import React from "react";
 import DesktopNavBar from "../../components/NavBar/DesktopNavBar";
-import DesktopHeroSection from "../../components/HeroSectionImage/DesktopHeroSection";
+import DesktopHeroSection from "../../components/HeroSection/DesktopHeroSection";
 import TabletCategories from "../../components/categories/TabletCategories";
 import DesktopAbout from "../../components/About/DesktopAbout";
 import DesktopFooter from "../../components/Footer/DesktopFooter";

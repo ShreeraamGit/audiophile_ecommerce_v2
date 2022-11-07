@@ -3,7 +3,7 @@ import { Fragment } from "react";
 import HeroImageDesktop from "../../assets/home/desktop/image-hero.jpg";
 import Button from "../Button/Button";
 
-const DesktopHeroSection = () => {
+const DesktopHeroSectionImage = () => {
   return (
     <div className="relative">
       <div className="hero-section-image">
@@ -28,4 +28,4 @@ const DesktopHeroSection = () => {
   );
 };
 
-export default DesktopHeroSection;
+export default DesktopHeroSectionImage;

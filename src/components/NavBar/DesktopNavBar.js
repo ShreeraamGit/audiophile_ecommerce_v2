@@ -8,14 +8,20 @@ import { Link } from "react-router-dom";
 const DesktopNavBar = () => {
   return (
     <nav className="nav-bar flex p-4 border-b justify-between items-center pr-24 pl-24">
-      <Link to="/">
-        <Logo className=""></Logo>
-      </Link>
+      <Logo className=""></Logo>
       <div className="nav-items text-white flex gap-14">
-        <div className="">HOME</div>
-        <div className="">HEADPHONES</div>
-        <div className="">SPEAKERS</div>
-        <div className="">EARPHONES</div>
+        <Link to="/">
+          <div className="">HOME</div>
+        </Link>
+        <Link to="headphones">
+          <div className="">HEADPHONES</div>
+        </Link>
+        <Link to="speakers">
+          <div className="">SPEAKERS</div>
+        </Link>
+        <Link to="earphones">
+          <div className="">EARPHONES</div>
+        </Link>
       </div>
       <Icon color="white" w={35} h={35} as={BsCart4}></Icon>
     </nav>

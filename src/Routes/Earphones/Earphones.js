@@ -5,6 +5,7 @@ import { getPageName } from "../../features/pageName/pageNameSlice";
 import ProductCard from "../../components/productCard/ProductCard.js";
 import { useMediaQuery } from "react-responsive";
 import TabletProductCard from "../../components/productCard/TabletProductCard.js";
+import DesktopProductCard from "../../components/productCard/DesktopProductCard";
 
 const Earphones = () => {
   const { data } = useSelector((state) => state.data);
@@ -70,7 +71,21 @@ const Earphones = () => {
     } else if (isLaptop) {
       return <h1 className="">IS Laptop</h1>;
     } else if (isDesktop) {
-      return <h1 className="">IS Desktop</h1>;
+      return (
+        <div className="">
+          <section className="flex flex-col justify-center items-center gap-10">
+            {productsList.map((items, index) => (
+              <DesktopProductCard
+                pageName={pageName}
+                key={items.id}
+                productsList={items}
+                index={index}
+              ></DesktopProductCard>
+            ))}
+          </section>
+          <Outlet></Outlet>
+        </div>
+      );
     } else {
       return <h1 className="">IS LArge</h1>;
     }
