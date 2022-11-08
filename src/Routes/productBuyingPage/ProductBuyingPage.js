@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 import TabletProductDetailsCard from "../../components/ProductDetailscard/TabletProductDetailsCard";
+import DesktopProductDetailsCard from "../../components/ProductDetailscard/DesktopProductDetailsCard";
 import { Fragment } from "react";
 
 const ProductBuyingPage = () => {
@@ -65,7 +66,21 @@ const ProductBuyingPage = () => {
     } else if (isLaptop) {
       return <h1 className="">IS Laptop</h1>;
     } else if (isDesktop) {
-      return <h1 className="">IS Desktop</h1>;
+      return (
+        <div className="mt-20 flex flex-col justify-start items-start gap-14">
+          <button onClick={() => navigate(-1)} className="mt-7 text-[1.5rem]">
+            Go Back
+          </button>
+          <section className="mt-1 flex flex-col justify-center items-center gap-20">
+            {selectedProduct.map((items) => (
+              <DesktopProductDetailsCard
+                key={items.id}
+                product={items}
+              ></DesktopProductDetailsCard>
+            ))}
+          </section>
+        </div>
+      );
     } else {
       return <h1 className="">IS LArge</h1>;
     }

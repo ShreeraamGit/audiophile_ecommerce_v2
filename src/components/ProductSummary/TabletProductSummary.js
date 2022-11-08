@@ -5,8 +5,8 @@ const TabletProductSummary = (props) => {
   const { product } = props;
 
   return (
-    <div className=" flex flex-col gap-8">
-      <h3 className="text-[32px] leading-[38px] tracking-[1.15px] font-medium w-[70%]">
+    <div className="flex flex-col gap-8">
+      <h3 className="text-[32px] leading-[38px] tracking-[1.15px] font-medium">
         {product.name.toLocaleUpperCase()}
       </h3>
       <p className="text-[15px] leading-[25px] text-justify font-[300] text-[#000000]">

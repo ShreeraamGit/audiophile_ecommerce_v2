@@ -4,20 +4,21 @@ import Button from "../Button/Button";
 
 const DesktopProductCard = (props) => {
   const { productsList, index } = props;
+
   return (
     <div
       className={
         (index + 1) % 2 === 0
-          ? "p-6 mt-12 flex flex-row-reverse justify-center items-center gap-28"
-          : "p-6 mt-12 flex justify-center items-center gap-28"
+          ? "p-6 mt-12 flex flex-row-reverse justify-center items-center gap-36"
+          : "p-6 mt-12 flex justify-center items-center gap-36"
       }
     >
       <img
-        className="rounded-xl h-[30rem] w-[50%]"
+        className="rounded-xl h-[29rem] w-[29rem]"
         alt={productsList.name}
         src={productsList.categoryImage.desktop}
       ></img>
-      <div className="flex flex-col gap-9 w-[50%]">
+      <div className="flex flex-col gap-9 w-[40%]">
         <span className="text-[14px] tracking-[10px] text-[#D87D4A]">
           {productsList.new ? "NEW PRODUCT" : null}
         </span>
